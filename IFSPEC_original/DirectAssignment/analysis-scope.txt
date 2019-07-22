@@ -1,0 +1,3 @@
+INTERFACE DirectAssignment.leakyMethod(int)
+ENVIRONMENT DirectAssignment.main(java.lang.String[])
+ENVIRONMENT DirectAssignment.randInt()

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE riflspec SYSTEM "../rifl-JavaSourceCode-1.0.dtd">
+<riflspec>
+  <interfacespec>
+    <assignable handle="l">
+		<category name="lowVertices">
+			<sink><returnvalue class="IFMethodContract" method="insecure_if_high_n1(int)"/></sink>
+     </category>
+    </assignable>
+    <assignable handle="h">
+		<category name="highVertices">
+        <source><parameter class="IFMethodContract" method="insecure_if_high_n1(int)" parameter="1"/></source>
+        </category>
+    </assignable>
+  </interfacespec>
+  <domains><domain name="high" /><domain name="low" /></domains>
+  <flowrelation><flow from="low" to="high" /></flowrelation>
+  <domainassignment>
+    <assign handle="h" domain="high" />
+    <assign handle="l" domain="low" />
+  </domainassignment>
+</riflspec>
+

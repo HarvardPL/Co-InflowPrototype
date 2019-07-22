@@ -1,0 +1,1 @@
+This method does some computation on that value and returns that value. The computation yields 'true', if the secret is 'true'.

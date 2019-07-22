@@ -1,0 +1,8 @@
+INTERFACE Account.Account()
+INTERFACE Account.deposit(double)
+INTERFACE AccountOwner.AccountOwner(Account)
+INTERFACE Beneficiary.Beneficiary()
+INTERFACE AccountOwner.payBeneficiary(Beneficiary,double)
+ENVIRONMENT Main.main(java.lang.String[])
+ENVIRONMENT ErrorLog.logError(java.lang.String)
+ENVIRONMENT TransactionLog.logTransaction(java.lang.String)

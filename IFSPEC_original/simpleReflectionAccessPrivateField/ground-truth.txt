@@ -1,0 +1,3 @@
+INSECURE
+
+By using reflection, the private field storing the password becomes public and is then directly printed to standard output leaking the secret.

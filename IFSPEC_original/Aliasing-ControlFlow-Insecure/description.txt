@@ -1,0 +1,4 @@
+The program creates two internal objects a and b that alias. 
+If the secret is equal to 42, the value of an internal field of a is set to 2 (otherwise it is 1).
+Finally, the value of the same internal field of b is printed. 
+This leaks the fact whether the secret is 42 or not. 

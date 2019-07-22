@@ -1,0 +1,2 @@
+The specification correctly defines the input provided to the method computeSecretly(int h) as a high source of information as required.
+Furthermore, the specification correctly defines the return value of the method computeSecretely(int h) as a low sink of information as the attacker is able to observe the return value of this method.

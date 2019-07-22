@@ -1,0 +1,1 @@
+The RIFL specification realizes the requirement, since it specifies the parameter as high source and the return value as low sink and forbids information flow between high and low.

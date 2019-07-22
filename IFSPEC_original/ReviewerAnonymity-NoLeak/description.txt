@@ -1,0 +1,9 @@
+This example models a simplified peer review process. The class ReviewProcess
+provides public functions to add reviews and to send out notifications to the
+authors (here simply by printing the reviews on the standard output).
+
+The reviews are sorted before they are output.
+This non-leaky version orders only based on review score and content.
+In the leaky version (in a different directory), the sort order depends on the
+reviewer identity.
+

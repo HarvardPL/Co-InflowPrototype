@@ -1,0 +1,1 @@
+The method noLeak leaks the high value if the current date is in the past.

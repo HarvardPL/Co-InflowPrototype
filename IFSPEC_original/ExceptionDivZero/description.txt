@@ -1,0 +1,1 @@
+The program asks the user to input two private integers and outputs the integer quotient of the two numbers. Additionally, the program saves the query to analyze them later. The guarantee that the query will not be saved publicly is given by the program. If an error occurs, the error is added to a public log file on the disk, such that a technician can solve the problem.

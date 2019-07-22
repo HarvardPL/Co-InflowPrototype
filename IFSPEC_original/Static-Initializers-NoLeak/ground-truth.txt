@@ -1,0 +1,4 @@
+SECURE
+
+
+Java Spec 12.4.1 and left-to-right evaluation of function arguments guarantees that static initializer of A is executed before that of B, thus generating no illicit data flow.

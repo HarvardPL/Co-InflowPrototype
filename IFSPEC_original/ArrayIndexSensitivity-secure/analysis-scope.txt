@@ -1,0 +1,2 @@
+INTERFACE program.foo(int)
+ENVIRONMENT program.main(java.lang.String[])

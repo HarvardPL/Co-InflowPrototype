@@ -1,0 +1,5 @@
+The method MyClass.compute computes p(h), where p(x) = x^6 + 3*x^4 + 3*x^2 + 1, and checks if p(h) is zero or not. 
+If it is zero, the method returns the high value h, if not, it returns the low value l.
+Since p(x) = (x^2 + 1)^3, there does not exist value v such that p(v) = 0.
+Therefore the method MyClass.compute does not leak the high value h.
+(The program uses BigInteger; thus the arithmetic is precise and no ovewflow can happen and.)

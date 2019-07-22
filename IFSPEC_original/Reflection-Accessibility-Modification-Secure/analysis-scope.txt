@@ -1,0 +1,1 @@
+INTERFACE SimpleReflection.main(java.lang.String[])

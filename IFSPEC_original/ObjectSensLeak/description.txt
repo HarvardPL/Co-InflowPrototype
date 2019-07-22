@@ -1,0 +1,2 @@
+This program creates two objects of the same class, initializing their internal state with low and high values. 
+Afterwards, a method returning the object internal state is called on the object initialized with the low value.

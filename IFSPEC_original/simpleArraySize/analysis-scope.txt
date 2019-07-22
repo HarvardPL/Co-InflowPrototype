@@ -1,0 +1,2 @@
+INTERFACE simpleArraySize.arraySizeLeak(int)
+ENVIRONMENT simpleArraySize.main(java.lang.String[])

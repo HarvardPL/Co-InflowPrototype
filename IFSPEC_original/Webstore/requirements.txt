@@ -1,0 +1,4 @@
+There is no flow from high to low.
+
+The method of interes is "buyProduct", which returns a low value.
+The input to the mehtod is a low product id and a high creditcard number

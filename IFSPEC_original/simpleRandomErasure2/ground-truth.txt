@@ -1,0 +1,3 @@
+SECURE
+
+As the output value is chosen randomly no matter what the secret is the program is secure.

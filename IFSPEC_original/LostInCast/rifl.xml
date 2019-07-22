@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE riflspec SYSTEM "../rifl-JavaSourceCode-1.0.dtd">
+<riflspec>
+  <interfacespec>
+    <assignable handle="h">
+	    <source>
+        <parameter class="lostInCast" method="doIt(int)" parameter="1"/>
+      </source>
+    </assignable>
+    <assignable handle="l">
+      <sink>
+        <returnvalue class="lostInCast" method="doIt(int)"/>
+      </sink>
+    </assignable>
+  </interfacespec>
+
+  <domains><domain name="high" /><domain name="low" /></domains>
+  <flowrelation><flow from="low" to="high" /></flowrelation>
+  <domainassignment>
+    <assign handle="h" domain="high" />
+    <assign handle="l" domain="low" />
+  </domainassignment>
+</riflspec>
+

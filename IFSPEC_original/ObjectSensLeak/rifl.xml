@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE riflspec SYSTEM "../rifl-JavaSourceCode-1.0.dtd">
+<riflspec>
+<interfacespec>
+<assignable handle="a_sources">
+<category name="sources">
+<source>
+<parameter class="ObjectSensLeak" method="test(int,int)" parameter="1"/>
+</source>
+</category>
+</assignable>
+<assignable handle="a_sinks">
+<category name="cat">
+<sink>
+<returnvalue class="ObjectSensLeak" method="test(int,int)"/>
+</sink>
+<source>
+<parameter class="ObjectSensLeak" method="test(int,int)" parameter="2"/>
+</source>
+</category>
+</assignable>
+</interfacespec>
+<domains>
+<domain name="top" />
+<domain name="bottom" />
+</domains>
+<flowrelation>
+<flow from="bottom" to="top" />
+</flowrelation>
+<domainassignment>
+<assign handle="a_sources" domain="top" />
+<assign handle="a_sinks" domain="bottom" />
+</domainassignment>
+</riflspec>

@@ -1,0 +1,2 @@
+INTERFACE Eg2.f(int,int)
+ENVIRONMENT Eg2.main(java.lang.String[])

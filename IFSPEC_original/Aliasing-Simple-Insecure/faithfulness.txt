@@ -1,0 +1,1 @@
+The policy expresses the requirements, since it specifies that user input is high, output to System.out is low and that flow from high to low is forbidden.

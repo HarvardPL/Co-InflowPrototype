@@ -1,0 +1,3 @@
+The RIFL policy specifies the field "secret" as high source. It also specifies
+the first parameter of System.out.println(int) as low sink. By forbidding flows
+from high to low, the RIFL policy faithfully captures the security requirement. 

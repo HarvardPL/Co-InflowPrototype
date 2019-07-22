@@ -1,0 +1,2 @@
+INTERFACE simpleListSize.listSizeLeak(int)
+ENVIRONMENT simpleListSize.main(java.lang.String[])

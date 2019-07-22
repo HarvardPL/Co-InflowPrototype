@@ -1,0 +1,3 @@
+The RIFL specification is faithful because we assign prod to the low domain and cc to high and we specify that flow can only occur only from low to high.
+
+The program does return the low product id, not the high credit card number. They are stored, however, to the same array.

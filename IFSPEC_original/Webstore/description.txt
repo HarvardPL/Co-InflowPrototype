@@ -1,0 +1,2 @@
+The class Webstore offers possibilities to buy products and similar functionality.
+Therefore, the user provides high and low input, but some sinks should only return low values, since their result maight be shown in the browser.

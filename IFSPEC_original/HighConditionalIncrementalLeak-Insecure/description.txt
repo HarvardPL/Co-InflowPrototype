@@ -1,0 +1,1 @@
+The method f is provided with two inputs h and l. Via a loop the value of h is added to the value of l if h is positive, otherwise, l remains unchanged. Finally, the value of l is returned.

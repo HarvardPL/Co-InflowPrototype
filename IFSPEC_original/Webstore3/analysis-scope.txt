@@ -1,0 +1,5 @@
+INTERFACE Webstore.setBillingAdr(int,int)
+INTERFACE Webstore.setDeliveryAdr(int,int)
+INTERFACE Webstore.getBillAdr()
+INTERFACE Webstore.getDeliverAdr()
+ENVIRONMENT Webstore.main(java.lang.String[])

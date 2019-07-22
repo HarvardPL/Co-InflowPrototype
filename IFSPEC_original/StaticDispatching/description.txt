@@ -1,0 +1,1 @@
+If the low variable is equal to 1 the method set(long) is called which outputs the high value to the low sink. Otherwise the method set(int) is called which outputs the high value to the high sink.

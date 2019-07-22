@@ -1,0 +1,4 @@
+SECURE
+
+The program is secure, since the objectidentities storing videos are never released.
+However, it has to be navigated over high variables to get to low content.

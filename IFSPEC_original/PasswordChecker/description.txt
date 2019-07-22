@@ -1,0 +1,2 @@
+Checks the strength of the entered password by evaluating the number of Caps
+letters and alphanumeric characters in the password string. The result of the password check is then printed to standard output.

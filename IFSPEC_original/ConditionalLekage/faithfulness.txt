@@ -1,0 +1,1 @@
+The specification specifies the second parameter of method 'divide' as high source and the parameter of method 'PrintStream.println' as low sink. Since it also forbids flows from high to low, this realizes the requirements.

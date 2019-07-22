@@ -1,0 +1,4 @@
+INTERFACE Eg4.f(int,int,int[])
+ENVIRONMENT Eg4.main(java.lang.String[])
+ENVIRONMENT Eg4.randInt()
+ENVIRONMENT Eg4.randIntArray(int)

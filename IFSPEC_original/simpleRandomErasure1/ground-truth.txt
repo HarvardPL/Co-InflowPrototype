@@ -1,0 +1,3 @@
+INSECURE
+
+The output value depends on the secret, because the range in which the random number that is added to or subtracted from the secret depends on the secret itself. 

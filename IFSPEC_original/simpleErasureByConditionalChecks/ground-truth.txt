@@ -1,0 +1,3 @@
+SECURE
+
+The program is secure because the method computeSecretly returns 5 no matter what confidential information was provided as input.

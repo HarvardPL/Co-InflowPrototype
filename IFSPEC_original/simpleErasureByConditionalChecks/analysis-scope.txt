@@ -1,0 +1,2 @@
+INTERFACE SimpleErasureByConditionalChecks.computeSecretly(int)
+ENVIRONMENT SimpleErasureByConditionalChecks.main(java.lang.String[])
