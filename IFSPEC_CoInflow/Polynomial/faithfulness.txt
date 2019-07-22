@@ -1,0 +1,2 @@
+According to the specified flow relation, flows are only allowed from low to high. 
+By setting the parameter h of 'MyClass.compute' to high and its return value to low, this flow is forbidden and hence the security requirement is captured by the RIFL specification.

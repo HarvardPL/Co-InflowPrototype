@@ -1,0 +1,1 @@
+The RIFL specification classifies the parameter of secure_ifl as a high source and its return value as a low sink. Furthermore, the specification does not allow flows of information from high to low. Hence, the RIFL specification captures that no flow of information from the parameter of secure_ifl to its return value is allowed.

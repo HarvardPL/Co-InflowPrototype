@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE riflspec SYSTEM "../rifl-JavaSourceCode-1.0.dtd">
+<riflspec>
+  <interfacespec>
+    <assignable handle="h">
+      <category name="higSources">
+        <source><field class="Static_Initializers_NoLeak" name="h"/></source>
+        <!-- <source><returnvalue class="program" method="foo(int)"/></source> -->
+        <!-- <source><field       class="program" field="foo"/></source> -->
+      </category>
+    </assignable>
+    <assignable handle="l">
+      <category name="lowSinks">
+        <sink><field class="Static_Initializers_NoLeak" name="l"/></sink>
+        <!-- <sink><parameter   class="program" method="foo(int)" parameter="1"/></sink> -->
+        <!-- <sink><field       class="program" field="foo"/></sink> -->
+      </category>
+    </assignable>
+  </interfacespec>
+
+  <domains><domain name="high" /><domain name="low" /></domains>
+  <flowrelation><flow from="low" to="high" /></flowrelation>
+  <domainassignment>
+    <assign handle="h" domain="high" />
+    <assign handle="l" domain="low" />
+  </domainassignment>
+</riflspec>

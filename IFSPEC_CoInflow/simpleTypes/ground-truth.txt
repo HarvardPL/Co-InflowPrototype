@@ -1,0 +1,3 @@
+INSECURE
+
+The instanceof check reveals the secret stored in the field secret.

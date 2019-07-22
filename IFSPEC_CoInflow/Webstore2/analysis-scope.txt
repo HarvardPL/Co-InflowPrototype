@@ -1,0 +1,3 @@
+INTERFACE Webstore.seePreview(int)
+INTERFACE Webstore.seePrime(int)
+ENVIRONMENT Webstore.main(java.lang.String[])

@@ -1,0 +1,3 @@
+INTERFACE Eg1.f(int,int)
+ENVIRONMENT Eg1.main(java.lang.String[])
+ENVIRONMENT Eg1.randInt()

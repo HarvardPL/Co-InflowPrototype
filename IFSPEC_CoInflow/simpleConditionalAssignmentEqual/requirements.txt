@@ -1,0 +1,1 @@
+The secret in simpleConditionalAssignmentEqual shall not be passed to the command line.

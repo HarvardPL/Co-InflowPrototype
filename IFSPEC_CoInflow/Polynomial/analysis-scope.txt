@@ -1,0 +1,2 @@
+INTERFACE MyClass.compute(java.math.BigInteger,java.math.BigInteger)
+ENVIRONMENT MyClass.main(java.lang.String[])

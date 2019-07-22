@@ -1,0 +1,3 @@
+The program stores the secret value in class A when it is initialized and
+prints a String that is not dependent on the secret value. Hence, no 
+information about the secret value is leaked.

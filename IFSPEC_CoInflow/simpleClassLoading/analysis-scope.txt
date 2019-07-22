@@ -1,0 +1,1 @@
+INTERFACE simpleClassLoading.main(java.lang.String[])

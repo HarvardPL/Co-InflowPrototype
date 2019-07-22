@@ -1,0 +1,1 @@
+No information from the static field h must flow to the static field l.

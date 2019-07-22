@@ -1,0 +1,2 @@
+The specification correctly defines the field secret of the class simpleReflection as a high source of information as required.
+Furthermore, the specification correctly defines the first parameter of the method println of the class PrintStream as a low sink of information as the standard output is observable by the attacker.

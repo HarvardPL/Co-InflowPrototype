@@ -1,0 +1,6 @@
+This example provides a program where a function works on a secret input,
+checks whether the given input is less or higher than 0 and sets the eventual
+return value to an intermediate value (that differs between the comparason results).
+
+Eventually, however, the return value is set to a constant value, no matter what
+the comparison resulted in before.

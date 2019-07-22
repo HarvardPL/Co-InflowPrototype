@@ -1,0 +1,3 @@
+The reviewer identities are to be kept secret. The observer is assumed to be an
+author, receiving the reviews via the standard output of the program. Hence,
+this observable output must not depend on the reviewer identities.

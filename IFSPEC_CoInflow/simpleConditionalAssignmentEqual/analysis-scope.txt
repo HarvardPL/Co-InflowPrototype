@@ -1,0 +1,2 @@
+INTERFACE simpleConditionalAssignmentEqual.test()
+ENVIRONMENT simpleConditionalAssignmentEqual.main(java.lang.String[])

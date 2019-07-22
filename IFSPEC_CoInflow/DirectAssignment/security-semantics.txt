@@ -1,0 +1,16 @@
+flow*-predicate (KeY) [1]
+Sequential Noninterference (Joana and JoDroid) [2]
+Termination-Insensitive Noninterference for the Abstract Dalvik Language (Cassandra) [3]
+
+[1] B. Beckert, D. Bruns, V. Klebanov, C. Scheben, P. H. Schmitt, and M. Ulbrich, 
+“Information Flow in Object-Oriented Software,”
+in LOPSTR ’13, pp. 19–37.
+
+[2] S. Bischof, J. Breitner, J. Graf, M. Hecker, M. Mohr, and G. Snelting, 
+“Low-deterministic security for low-deterministic programs,” 
+2017, Preprint from authors website. 
+[Online]. Available: https://pp.ipd.kit.edu/uploads/publikationen/bischof17rlsod.pdf
+
+[3] S. Lortz, H. Mantel, A. Starostin, T. Bähr, D. Schneider, and A. Weber, 
+“Cassandra: Towards a Certifying App Store for Android,” 
+in SPSM ’14, pp. 93–104.

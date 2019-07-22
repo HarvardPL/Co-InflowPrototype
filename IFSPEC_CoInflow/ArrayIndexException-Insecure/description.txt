@@ -1,0 +1,3 @@
+The program loops over an array that has the length of the secret value. 
+If an array index esception occurs, the value of the accessed index is printed. 
+This leaks the secret value.

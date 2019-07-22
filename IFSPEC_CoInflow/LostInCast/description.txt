@@ -1,0 +1,1 @@
+The class lostInCast takes in input an integer value, performs some meaningless mathematical computation and prints an integer.

@@ -1,0 +1,1 @@
+The given method has one parameter. It creates an int array of length 2. It stores its parameter at index 0 and returns the value at index 1.

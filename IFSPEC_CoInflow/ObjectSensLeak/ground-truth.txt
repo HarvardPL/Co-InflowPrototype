@@ -1,0 +1,2 @@
+SECURE
+The program only outputs the value in the object that has been created with the low value.

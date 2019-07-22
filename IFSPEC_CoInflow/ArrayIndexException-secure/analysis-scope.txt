@@ -1,0 +1,1 @@
+INTERFACE Main.main(java.lang.String[])

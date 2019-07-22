@@ -1,0 +1,3 @@
+SECURE
+
+The program is secure because the value assigned to variable value is the same in both branches, hence, the value written to standard output is the same no matter what value the field secret has.

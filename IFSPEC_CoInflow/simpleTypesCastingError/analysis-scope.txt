@@ -1,0 +1,2 @@
+INTERFACE simpleTypesCastingError.test()
+ENVIRONMENT simpleTypesCastingError.main(java.lang.String[])

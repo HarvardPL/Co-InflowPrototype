@@ -1,0 +1,2 @@
+INTERFACE Aliasing.test(int)
+ENVIRONMENT program.main(java.lang.String[])

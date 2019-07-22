@@ -1,0 +1,3 @@
+No information about the provided password shall leak to the program output. 
+
+This means that no flow from the user provided String to the println function shall be allowed and in particular that the strength of the password shall not be printed.

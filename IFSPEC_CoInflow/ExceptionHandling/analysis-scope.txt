@@ -1,0 +1,3 @@
+INTERFACE TryCatch.f(int)
+ENVIRONMENT TryCatch.g(int)
+ENVIRONMENT TryCatch.main(java.lang.String[])

@@ -1,0 +1,1 @@
+The fields h and hsink belong to the high domain and the fields l and lsing belong to the low domain. The specification also states that no flow from high to low is allowed. 

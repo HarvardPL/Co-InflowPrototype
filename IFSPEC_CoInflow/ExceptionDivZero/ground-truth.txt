@@ -1,0 +1,4 @@
+INSECURE
+
+If the second integer is zero, an exception is thrown which is written to the disk.
+Thus the HIGH information that the second integer is equal to zero was written to the LOW output disk.

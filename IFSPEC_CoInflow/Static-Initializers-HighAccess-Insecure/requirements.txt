@@ -1,0 +1,1 @@
+The value stored in the field "secret" of class "Main" may not be leaked via System.out.println().

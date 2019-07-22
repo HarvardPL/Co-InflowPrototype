@@ -1,0 +1,2 @@
+The specification correctly defines the input h provided to the method listSizeLeak(int h) as a high source of information as required.
+Furthermore, the return value of the method listSizeLeak(int h) is correctly defined as a low sink of information as required.

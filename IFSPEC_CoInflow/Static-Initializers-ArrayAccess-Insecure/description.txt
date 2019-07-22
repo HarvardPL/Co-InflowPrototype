@@ -1,0 +1,3 @@
+When the class A is initialized, the secret value is stored in an array. 
+After performing an operation that initialized the class A, the secret value is 
+read from the array and leaked by printing it.

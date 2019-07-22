@@ -1,0 +1,4 @@
+The user input provided by the nextLine function is set to high.
+The output through the println function is set to low.
+No flow from high to low is allowed. 
+Since the password should not flow to the output, the RIFL specification faithfully describes the security requirement. 

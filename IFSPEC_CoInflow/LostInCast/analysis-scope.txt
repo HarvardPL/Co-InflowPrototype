@@ -1,0 +1,2 @@
+INTERFACE lostInCast.doIt(int)
+ENVIRONMENT lostInCast.main(java.lang.String[])

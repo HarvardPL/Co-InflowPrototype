@@ -1,0 +1,2 @@
+SECURE
+There does not exist a root of the checked polynomial, so no flow from the high input to the low return value exists.

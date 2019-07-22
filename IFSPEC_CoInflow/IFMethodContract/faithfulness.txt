@@ -1,0 +1,1 @@
+The RIFL specification classifies the field high as a high source and the field low as a low sink. Furthermore, the specification does not allow flows of information from high to low. Hence, the RIFL specification captures that no flow of information from the field high to the field low is allowed.

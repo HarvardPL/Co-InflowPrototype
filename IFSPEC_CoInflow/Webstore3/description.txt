@@ -1,0 +1,3 @@
+The webstore manages two types of adresses, one for delivering and one for billing.
+The specification is from the point of view of the delivery department.
+They need the billing adress, but not the delivery adress for managing performing their task.

@@ -1,0 +1,2 @@
+INSECURE
+The given program reveals information about the entered password by printing its strength to the console.
