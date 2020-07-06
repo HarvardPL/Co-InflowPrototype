@@ -14,10 +14,10 @@ This repo includes the following
 The directory of this repo is the following: 
 ```
 .
-├── IFSpec_original         # main formalization results corresponding to the paper
-├── IFSpec_Coinflow         # some tactics used
-├── IFSpec_harness          # a old version with no floating label
-├── Prototype               # a old version with floating label for objects
+├── IFSpec_original         # original version of the IFSpec benchmark suite
+├── IFSpec_Coinflow         # IFSpec benchmark test cases with Co-Inflow annotations
+├── IFSpec_harness          # harness program for using Co-Inflow prototype on the IFSpec
+├── Prototype               # Co-Inflow prototype
 ├── Case_studies            # three case studies
 │   ├── HR.                 # a Human Resources application
 │   ├── HealthPlus          # a Health Records application
