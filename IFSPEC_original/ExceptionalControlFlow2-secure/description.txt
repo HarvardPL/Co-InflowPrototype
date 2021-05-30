@@ -1,1 +1,0 @@
-This program calls the method 'foo' with a random boolean value. No matter what the input was, an exception is thrown and immediately caught. When catching the exception, the return value is set to true. This value is then returned by the method.

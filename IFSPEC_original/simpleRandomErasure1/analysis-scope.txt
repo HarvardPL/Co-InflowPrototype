@@ -1,1 +1,0 @@
-INTERFACE simpleRandomErasure.main(java.lang.String[])

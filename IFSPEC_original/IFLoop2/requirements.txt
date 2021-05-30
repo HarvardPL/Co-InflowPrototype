@@ -1,1 +1,0 @@
-There should not be any flow of information from the field high to the field low.

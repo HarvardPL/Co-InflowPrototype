@@ -1,2 +1,0 @@
-The RIFL specification declares the parameter of 'leakyMethod' as high source and the return value of 'leakyMethod' as low sink.
-Furthermore, it forbids flows from high to low. Hence it captures the intuitive requirements.

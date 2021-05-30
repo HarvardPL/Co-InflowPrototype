@@ -1,4 +1,0 @@
-The program saves the secret value at position 0 of an array. 
-If the value at position 0 has a certain value, a message is printed. 
-Otherwise, the same message is printed. 
-This does not leak whether the secret value has the tested value.

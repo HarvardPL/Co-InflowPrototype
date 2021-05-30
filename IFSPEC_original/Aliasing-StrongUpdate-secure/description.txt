@@ -1,2 +1,0 @@
-The program prints a field from an object that contains the secret value
-at some point of the execution, but is changed before the print operation happens.

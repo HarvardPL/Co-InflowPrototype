@@ -1,3 +1,0 @@
-INTERFACE ExceptionDivZero.main(java.lang.String[])
-ENVIRONMENT ExceptionDivZero.writeToDB(java.lang.String)
-ENVIRONMENT ExceptionDivZero.writeToDisk(java.lang.String)

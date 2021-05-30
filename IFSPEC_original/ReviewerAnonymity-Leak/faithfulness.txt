@@ -1,5 +1,0 @@
-The reviewer identities are modeled as integer numbers in this program, and the
-corresponding parameter to the addReview function is labeled as high. The
-observable output via System.out.println is labeled as low.
-No information may flow from high to low. 
-Hence, the RIFL specification faithfully models the security requirement.

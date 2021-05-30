@@ -1,3 +1,0 @@
-INSECURE
-
-The return value of f either leaks that the value h is smaller or equal to 0 if the return value is equal to l or the complete secret as the secret can be computed by knowing the orignal value of l if h>0.

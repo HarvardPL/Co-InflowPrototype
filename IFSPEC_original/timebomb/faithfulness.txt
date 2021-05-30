@@ -1,2 +1,0 @@
-According to the specified flow relation, flows are only allowed from low to high. 
-By setting the parameter of noLeak to high and its return value to low, this flow is forbidden, 

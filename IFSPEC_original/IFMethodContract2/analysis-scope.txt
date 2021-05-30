@@ -1,2 +1,0 @@
-INTERFACE IFMethodContract.insecure_if_high_n1(int)
-ENVIRONMENT IFMethodContract.main(java.lang.String[])

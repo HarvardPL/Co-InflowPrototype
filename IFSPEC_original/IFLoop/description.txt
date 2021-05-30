@@ -1,1 +1,0 @@
-In the program, a loop is executed and the local variables x and y are incremented (starting from zero) until the value of the local variable y reaches 10. In each iteration, x is assigned to the local variable 'low'. When the value of y reaches five, x is set to the value of the parameter and the value of y is set to nine. At the end, the local variable low is returned.

@@ -1,5 +1,0 @@
-INSECURE
-In this version, the sort order of the reviews depends on the ID
-numbers of the reviewers. It could be argued that this provides little
-information, but combined with background knowledge it might reveal the
-identity of some of the reviewers.

@@ -1,1 +1,0 @@
-The method 'f' copies the value of its first parameter into its second parameter and returns the second parameter.

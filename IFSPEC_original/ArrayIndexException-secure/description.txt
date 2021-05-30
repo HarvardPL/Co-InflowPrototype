@@ -1,4 +1,0 @@
-The program loops over an array that has the length of the secret value. 
-If an array index esception occurs, the program is terminated.  
-This does not leak the secret value under our security model, but the timing
-of the program might be dependent on the secret value.

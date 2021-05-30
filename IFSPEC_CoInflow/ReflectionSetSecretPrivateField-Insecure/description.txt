@@ -1,3 +1,0 @@
-The program contains a class containing the secret. 
-In the main method, this field is reflectively accessed and saved in another class.
-The saved value is printed, leaking the secret value.

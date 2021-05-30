@@ -1,3 +1,0 @@
-INSECURE
-
-The program indicates that 10 login-ins in a row were unsuccessful by a message to standard output which by assumption is visible to the attacker.

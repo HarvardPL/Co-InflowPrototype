@@ -1,2 +1,0 @@
-The specification correctly defines the first parameter of the method arraySizeLeak(int h) as a high source of information, as confidential information is potentially passed to this method.
-Furthermore, the specification correctly defines the return value of the method arraySizeLeak(int h) as a low sink because this value is assumed to be visible to the attacker. 

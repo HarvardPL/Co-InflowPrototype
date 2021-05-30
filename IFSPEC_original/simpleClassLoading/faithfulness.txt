@@ -1,1 +1,0 @@
-Flow is only allowed from low to high. By setting the secret to high and the command line output to low, the secret shall remain secret.

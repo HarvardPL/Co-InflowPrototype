@@ -1,2 +1,0 @@
-SECURE
-No matter what the secret input is, the method 'foo' always returns true. Therefore, no information about the secret argument flows to the return value of 'foo' and the security requirement is fulfilled.

@@ -1,3 +1,0 @@
-INSECURE
-
-The program leaks the secret value h.

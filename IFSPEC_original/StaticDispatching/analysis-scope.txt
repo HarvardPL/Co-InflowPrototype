@@ -1,2 +1,0 @@
-INTERFACE StaticDispatching.f()
-ENVIRONMENT StaticDispatching.main(java.lang.String[])

@@ -1,1 +1,0 @@
-The program does not leak secret information via the size of an ArrayList.

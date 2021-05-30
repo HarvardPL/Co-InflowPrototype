@@ -1,1 +1,0 @@
-The program consists of a single class simpleConditionalAssignmentEqual that has a field secret and a single main method. The main method assigns a string to a variable value depending on the secret. The assigned value is equal is both branches. Afterwards the value is written to standard output.

@@ -1,2 +1,0 @@
-INTERFACE SimpleReflection.hackSafe(SecureSafe)
-ENVIRONMENT SimpleReflection.main(java.lang.String[])

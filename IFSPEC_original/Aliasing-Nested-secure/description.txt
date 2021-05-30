@@ -1,2 +1,0 @@
-The program creates an internal object, that has a field that contains another 
-object containing the secret value. 

@@ -1,1 +1,0 @@
-The method listSizeLeak accepts a secret number as input, creates a list and adds #secret elements to it. Afterwards it converts the array list to an array of the same length and returns the size of this array.

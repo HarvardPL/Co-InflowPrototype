@@ -1,3 +1,0 @@
-A simple example for a video streaming service. The Store offers methods for watching either free previews of prime value.
-
-The interesting method here is the reinit method. It replaces an object used for storing with a clone of that object with the same contents. The actually stored videos are unchanged, but the object managing the storage of the video actually is.

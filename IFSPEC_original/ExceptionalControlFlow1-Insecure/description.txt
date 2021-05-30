@@ -1,1 +1,0 @@
-This program creates a random boolean value and passes it to the method foo(). Depending on this value, an exception is thrown, which determines whether true or false is returned by foo().

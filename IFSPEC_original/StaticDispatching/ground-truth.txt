@@ -1,3 +1,0 @@
-INSECURE
-
-if l == 1

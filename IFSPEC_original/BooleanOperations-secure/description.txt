@@ -1,1 +1,0 @@
-This method does some computation on that value and returns that value. The computation always yields 'true', hence the return value is always 'true'.

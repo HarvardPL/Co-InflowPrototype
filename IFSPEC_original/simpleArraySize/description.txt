@@ -1,1 +1,0 @@
-The method arraySizeLeak accepts a number as input, creates an array that has the size of the given number and returns the size of the array.

@@ -1,2 +1,0 @@
-INSECURE
-Any attacker which can observe public output can see the high value because it is printed to public output.

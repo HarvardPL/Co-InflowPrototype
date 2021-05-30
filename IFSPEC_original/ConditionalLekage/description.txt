@@ -1,1 +1,0 @@
-The given method takes two parameters l and h. It tries to divide l by h. If this fails, i.e. if h is 0, then an error message is printed to the console.

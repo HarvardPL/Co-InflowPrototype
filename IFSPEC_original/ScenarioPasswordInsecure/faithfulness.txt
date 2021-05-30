@@ -1,5 +1,0 @@
-The specification correctly defines the field "password" of the class PasswordManager as high source of information, as the password of each instance of the class PasswordManager is the confidential information in the program.
-Additionally, the specification correctly defines the fields invalidTries and
-loggedIn as high soruces. As the program writes confidential information to these fields that may be read throughout the program run.
-Furthermore, the specification correctly defines the first parameter of the method println of the class PrintStream as a low sink of information as the standard output is observable by the attacker.
-The program contains no further sources of confidential information or sinks to outside the program.

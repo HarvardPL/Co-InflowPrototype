@@ -1,1 +1,0 @@
-The program prints the secret Value when the class A is initialized. 

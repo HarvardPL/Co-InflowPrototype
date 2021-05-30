@@ -1,4 +1,0 @@
-According to the specified flow relation, flows are only allowed from low to high.
-The input of method doIt() is the first argument provided to the main method and is marked as high.
-The return value of doIt() is marked as low.
-Therefore this policy specifies the intuitve requirement that the number passed to doIt() shall not be leaked to the return value.

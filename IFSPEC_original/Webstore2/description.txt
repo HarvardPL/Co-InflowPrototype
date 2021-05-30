@@ -1,1 +1,0 @@
-A simple example for a video streaming service. The Store offers methods for watching either free previews of prime value.

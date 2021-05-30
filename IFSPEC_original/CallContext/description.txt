@@ -1,1 +1,0 @@
-This program copies its parameter into a local variable using a helper method. Afterwards it uses that helper method to copy a constant value and returns that constant value.

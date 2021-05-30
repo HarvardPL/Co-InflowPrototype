@@ -1,1 +1,0 @@
-The program branches on whether the value of the high parameter is positive and either a) calls the method n5() on the value of high, or b) assigns the value 7 to the local variable 'low'. Afterwards, 'low' is overwritten with the result of method 'n5' and returned.

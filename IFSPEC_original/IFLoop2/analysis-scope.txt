@@ -1,2 +1,0 @@
-INTERFACE IFLoop.insecure_ifl()
-ENVIRONMENT IFLoop.main(java.lang.String[])

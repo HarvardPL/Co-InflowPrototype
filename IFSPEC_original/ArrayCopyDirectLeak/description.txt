@@ -1,1 +1,0 @@
-The program generates h random numbers and assigns them to different indices in an array. It then returns a sum of all the random numbers generated.

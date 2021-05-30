@@ -1,1 +1,0 @@
-The input parameter h of the metod foo is specified as belonging to the high domain and the return value of the method foo is specified as belonging to the low domain. No information flow is allowed from high to low. 

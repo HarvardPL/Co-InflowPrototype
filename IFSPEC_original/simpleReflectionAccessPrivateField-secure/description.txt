@@ -1,1 +1,0 @@
-The program creates an instance of the SecureSafe that has a private field pub. Then the private field of the class SecureSafe is set to public access via java reflection and written to standard output.

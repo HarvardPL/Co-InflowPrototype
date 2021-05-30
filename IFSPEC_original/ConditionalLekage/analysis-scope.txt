@@ -1,3 +1,0 @@
-INTERFACE DivisionByZero.divide(int,int)
-ENVIRONMENT DivisionByZero.main(java.lang.String[])
-ENVIRONMENT DivisionByZero.randInt()

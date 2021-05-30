@@ -1,2 +1,0 @@
-SECURE
-The method returns a value which is independent of the secret parameter. Thus, it is secure w.r.t. the specification.

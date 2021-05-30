@@ -1,1 +1,0 @@
-Static initializers which copy the value of h to l, via x.

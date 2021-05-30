@@ -1,4 +1,0 @@
-The high source is stored in ObjectSensLeak.high, as captured by the RIFL policy.
-The low sink is the input parameter of the A.out method, which prints it into System.out. 
-No information may flow from the high to the low domain.
-This is also captured by the RIFL policy, hence the specification is faithful.

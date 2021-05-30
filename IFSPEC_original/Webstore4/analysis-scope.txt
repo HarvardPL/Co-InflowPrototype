@@ -1,2 +1,0 @@
-INTERFACE Webstore.reinit(boolean)
-ENVIRONMENT Webstore.main(java.lang.String[])

@@ -1,4 +1,0 @@
-The program creates three internal objects a,b and c that alias.
-The value of an internal field of a is set to the secret. 
-Then, the same field of c is printed. 
-This leaks the value of the secret.

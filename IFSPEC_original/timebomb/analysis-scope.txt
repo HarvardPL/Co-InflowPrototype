@@ -1,2 +1,0 @@
-INTERFACE Main.noLeak(int)
-ENVIRONMENT Main.main(java.lang.String[])

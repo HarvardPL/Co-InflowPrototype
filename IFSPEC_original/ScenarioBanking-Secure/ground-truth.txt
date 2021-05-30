@@ -1,2 +1,0 @@
-SECURE
-This example adheres to the security policy and no information leak occurs, because messages are appended to the error log without depending on the balance.

@@ -1,1 +1,0 @@
-The value stored in the field "password" of class "PasswordStorage" may not be leaked via System.out.println().

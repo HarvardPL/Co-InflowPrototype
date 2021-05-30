@@ -1,9 +1,0 @@
-The program should leak no information about the password to the user.
-
-The confidential information of the program is the secret password stored in the
-instance of the PasswordManager. Moreover, the program writes information
-depending on the secret password to the fields invalidTries and loggedIn, hence,
-they also contain confidential information.  Information leaves the scope of the
-program through the potential message written to standard output that no further
-logins are allowed. The output written to standard output is assummed to be
-visible to the attacker.

@@ -1,3 +1,0 @@
-SECURE
-
-The message printed to standard output depends on the field pub, which is not a secret field.

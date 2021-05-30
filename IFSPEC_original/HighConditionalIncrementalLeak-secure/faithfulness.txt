@@ -1,3 +1,0 @@
-The specificatiion correctly defines the first parameter h of the method f as a high source of information as required.
-Furthermore, it correctly defines the second parameter l of the method f as a low source of information as required.
-Finally, it correctly defines the return value of the method f as a low sink because the return value of the method f is visible by the attacker.

@@ -1,2 +1,0 @@
-The specification correctly defines the field password of the class SecureSafe as a high source of information as required.
-Furthermore, the specification correctly defines the first parameter of the method printlin of the class PrintStream as a low sink because the attacker can observe the standard output.

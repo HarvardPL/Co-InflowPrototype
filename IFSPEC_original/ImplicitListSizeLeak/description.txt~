@@ -1,1 +1,0 @@
-The program leaks secret information via the size of a LinkedList.

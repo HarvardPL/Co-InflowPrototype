@@ -1,3 +1,0 @@
-INSECURE
-
-Static initializers are to be executed in textual order, which results in illicit flow from h to l.

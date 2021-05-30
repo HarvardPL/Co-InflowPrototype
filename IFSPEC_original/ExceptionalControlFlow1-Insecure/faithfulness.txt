@@ -1,1 +1,0 @@
-The RIFL specification classifies the parameter of the method foo() is a high source and the return value of the method as a low sink. Furthermore, the specification does not allow flows of information from high to low. Hence, the specification expresses that no information may flow from the parameter of foo() to its return value.

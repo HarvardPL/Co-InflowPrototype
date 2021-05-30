@@ -1,3 +1,0 @@
-The program creates an array with the length of the secret value. 
-This array is then recreated with a different length.
-Finally, the length is printed, which does not leak the secret value.

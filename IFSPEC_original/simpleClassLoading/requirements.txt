@@ -1,1 +1,0 @@
-The value stored in the field secret should not be leaked to standard output. That is, the confidential information of the program is the value of the field secret and the attacker is able to observe standard output. 

@@ -1,3 +1,0 @@
-SECURE
-In this version, the sort order and the remaining output is independent
-of the ID numbers of the reviewers.

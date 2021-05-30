@@ -1,4 +1,0 @@
-INTERFACE program.foo(boolean)
-ENVIRONMENT program.main(java.lang.String[])
-ENVIRONMENT program.randInt()
-ENVIRONMENT program.randBool()

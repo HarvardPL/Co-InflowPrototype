@@ -1,4 +1,0 @@
-There is no flow from the field vPrime to the return value of seePreview.
-
-The webstore offers the possibility to watch videos. Common users have access to previews while paying customers have access to prime videos.
-The methods have to ensure that the "high" prime videos are not retrieved by the common user's interface.

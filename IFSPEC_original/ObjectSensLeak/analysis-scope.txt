@@ -1,2 +1,0 @@
-INTERFACE ObjectSensLeak.test(int,int)
-ENVIRONMENT ObjectSensLeak.main(java.lang.String[])

@@ -1,2 +1,0 @@
-INTERFACE Webstore.buyProduct(int,int)
-ENVIRONMENT Webstore.main(java.lang.String[])

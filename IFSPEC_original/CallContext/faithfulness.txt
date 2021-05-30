@@ -1,1 +1,0 @@
-The RIFL specification realizes the requirement, since it specifies the parameter of 'foo' as high and its return value as low and forbids flows between high and low.

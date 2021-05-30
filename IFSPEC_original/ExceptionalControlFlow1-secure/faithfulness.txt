@@ -1,1 +1,0 @@
-The input for method 'foo' is considered as secret input and is assigned to the domain high. The return value of method 'foo' is considered to be visible to the attacker and is assigned to the domain low. No Information may flow from high to low. Hence, the given RIFL specification expresses the desired security policy.

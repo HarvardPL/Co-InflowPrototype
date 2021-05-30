@@ -1,5 +1,0 @@
-SECURE
-
-In the loop the high value is never assigned to the low variable since, once it is assigned to the variable 'x', the guard of the loop becomes false.
-
-The analysis should therefore show that the value of high has no influence on the return value.

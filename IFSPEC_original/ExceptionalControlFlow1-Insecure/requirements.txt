@@ -1,1 +1,0 @@
-No information about the value of the parameter of the method foo() shall flow to the return value of foo().

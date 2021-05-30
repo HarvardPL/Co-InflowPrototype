@@ -1,1 +1,0 @@
-The method 'leakyMethod' returns its parameter.

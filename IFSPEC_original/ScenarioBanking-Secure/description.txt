@@ -1,2 +1,0 @@
-This example describes a banking scenario. The AccountOwner has an Account and can pay an amount to a beneficiary.
-The successfully completed transactions are logged in a TransactionLog, while errors are written down in an ErrorLog.

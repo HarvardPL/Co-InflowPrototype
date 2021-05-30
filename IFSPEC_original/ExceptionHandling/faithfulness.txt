@@ -1,2 +1,0 @@
-
-The return value of the method readLine() is classified by the RIFL specification as a high source. Furthermore, the parameter of PrintStream.println() is classified as a low sink. The specification does not allow flows of information from high to low. Hence, the specification captures that information about the value read from the console shall not flow to System.out.

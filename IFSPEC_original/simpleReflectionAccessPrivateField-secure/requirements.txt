@@ -1,1 +1,0 @@
-The password stored in the field passward of an instance of the class SecureSafe should not be leaked to standard output. That is, the field secret of the class SecureSafe is the confidential information of the program and the standard output is visible to the attacker. 

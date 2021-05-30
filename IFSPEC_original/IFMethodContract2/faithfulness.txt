@@ -1,1 +1,0 @@
-The RIFL specification is obviously faithful w.r.t. the security requirements since it forbids flows from high to low and classifies the parameter of 'insecure_if_high_n1' as high source and its return value as low sink.

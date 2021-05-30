@@ -1,2 +1,0 @@
-INSECURE
-This example illustrates an information leak, because the if the account owner tries to pay the beneficiary a sum that is larger than its current balance, a message will be added to the ErrorLog that contains the amount that the account owner tried to pay. An attacker can therefore determine, that the account balance is less that the logged amount.

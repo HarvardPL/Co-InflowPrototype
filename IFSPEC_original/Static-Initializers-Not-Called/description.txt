@@ -1,2 +1,0 @@
-When class A is initialized, the secret value is leaked by printing it. 
-However, class A is never loaded, and thus the secret value is not leaked.

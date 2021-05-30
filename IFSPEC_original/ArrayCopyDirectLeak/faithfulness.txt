@@ -1,1 +1,0 @@
-The RIFL specification forbids information flows from the first parameter of 'f' to the return value of 'f'. Hence it captures the intuitive requirements.

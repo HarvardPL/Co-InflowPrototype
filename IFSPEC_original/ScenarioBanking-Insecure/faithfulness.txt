@@ -1,2 +1,0 @@
-The balance field in Account is specified as a high source. The first parameter of the logError method in ErrorLog is a low sink and the first parameter to the logTransaction method of TransactionLog is a high sink.
-The information flow policy forbids flows from High to Low, so no information about the balance should be leaked to the ErrorLog.

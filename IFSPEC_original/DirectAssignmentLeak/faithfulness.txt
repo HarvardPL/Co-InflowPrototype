@@ -1,1 +1,0 @@
-The policy prohibits high data to flow to low sinks, where h is the high source and the return value of the function is the low sink. Hence it captures the intuitive requirement.

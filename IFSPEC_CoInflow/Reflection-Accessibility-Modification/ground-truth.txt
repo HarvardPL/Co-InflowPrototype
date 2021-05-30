@@ -1,3 +1,0 @@
-INSECURE
-
-The message printed to standard output depends on the secret field secret.

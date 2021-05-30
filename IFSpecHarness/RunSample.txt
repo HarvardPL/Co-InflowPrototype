@@ -1,0 +1,45 @@
+
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
+import java.io.IOException;
+import java.lang.reflect.InvocationTargetException;
+import java.lang.reflect.Method;
+import java.nio.file.FileSystems;
+
+import lbs.harvard.coinflow.CoInFlowUserAPI;
+import lbs.harvard.coinflow.lattice.IFCLattice;
+import lbs.harvard.coinflow.util.rifl.RIFLParser;
+
+public class RunSample {
+
+	public static File originalFolder = new File("/Users/llama_jian/Develop/IFSPEC/");
+	
+	public static void main(String[] args) {
+		Class clazz;
+		try {
+			
+			String originalTestCaseFolder = "originalTestCaseFolderPlaceHolder";
+			
+			File testing_suite = new File(originalTestCaseFolder);
+			String testing_case = testing_suite.getAbsolutePath();
+			String riflFile = testing_case + "/rifl.xml";
+			String groundTruthFile = testing_case + "/ground-truth.txt";
+			
+			BufferedReader in = new BufferedReader(new FileReader(new File(groundTruthFile)));
+			String groundTruth = in.readLine();
+			System.out.println("Ground truth of "+ testing_suite + " is: " + groundTruth);
+			in.close();
+			IFCLattice lattice = RIFLParser.buildLattice(riflFile);
+			CoInFlowUserAPI.initilize(lattice);
+			CoInFlowUserAPI.setLeakReportOption(CoInFlowUserAPI.PRINT);
+			
+			mainMethodInvocation;
+		} catch (Exception e) {
+			e.printStackTrace();
+		}
+		
+	}
+
+}

@@ -1,2 +1,0 @@
-The requirement is that the high value h passed to the 'MyClass.compute' method is not leaked by returning it.
-

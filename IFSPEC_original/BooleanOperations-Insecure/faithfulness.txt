@@ -1,1 +1,0 @@
-The RIFL specification classifies the high parameter as high source and the low return value as low sink. Furthermore, the specification does not allow flows of information from high to low. Hence, the RIFL specification captures that no flow of information from the high parameter to the low return value is allowed.

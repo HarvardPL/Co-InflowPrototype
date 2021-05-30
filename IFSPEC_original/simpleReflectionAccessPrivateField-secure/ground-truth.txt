@@ -1,4 +1,0 @@
-SECURE
-
-By using reflection, the private field storing the password becomes public and is then directly printed to standard output. 
-As the private field is not secret, this does not constitute a leak.

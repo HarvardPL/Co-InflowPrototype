@@ -1,2 +1,0 @@
-The number passed to the method doIt() must not be leaked to its return value.
-(basically, the output should be independent of the input)

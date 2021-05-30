@@ -1,1 +1,0 @@
-INTERFACE Static_Initializers_NoLeak.main(java.lang.String[])

@@ -1,2 +1,0 @@
-INSECURE
-The attacker can observe what is output via System.out.println() and hence learns whether the second parameter of 'divide' (which is considered to be secret) is 0 or not.

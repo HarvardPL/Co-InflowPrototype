@@ -1,1 +1,0 @@
-The program reads a number from the console and either prints 0 or 2, depending on whether the number is negative.

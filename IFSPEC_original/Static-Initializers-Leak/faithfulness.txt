@@ -1,1 +1,0 @@
-Field h is specified as belonging to the high domain and field l is specified as belongig to the low domain. No information flow is allowed from high to low. 

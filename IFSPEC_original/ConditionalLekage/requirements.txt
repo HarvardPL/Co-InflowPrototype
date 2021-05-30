@@ -1,1 +1,0 @@
-The second parameter of the method 'divide' must not flow to public output (i.e. System.out.println).

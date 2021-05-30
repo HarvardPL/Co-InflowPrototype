@@ -1,2 +1,0 @@
-INTERFACE simpleListToArraySize.listArraySizeLeak(int)
-ENVIRONMENT simpleListToArraySize.main(java.lang.String[])

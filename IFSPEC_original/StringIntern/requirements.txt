@@ -1,1 +1,0 @@
-No information flow should occur between the input parameter h and the return value of the method h.

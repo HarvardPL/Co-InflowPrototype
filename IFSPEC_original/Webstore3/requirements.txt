@@ -1,1 +1,0 @@
-The high parameters which are given to the setDeliveryAddress method should not flow to the billing address. 

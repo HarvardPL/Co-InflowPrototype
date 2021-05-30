@@ -1,3 +1,0 @@
-INSECURE
-
-The size of the array is equal to the passed secret number, thus the secret is leaked.

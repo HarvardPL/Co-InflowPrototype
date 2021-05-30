@@ -1,3 +1,0 @@
-SECURE
-
-The program is secure because the attacker is able to observe the return value of the method which is dependent on the secret provided as input to the method.

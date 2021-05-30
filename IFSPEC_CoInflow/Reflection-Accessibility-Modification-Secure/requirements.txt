@@ -1,1 +1,0 @@
-The value of the secret field secret in the class SimpleReflection shall not leak to the standard output. That is, the confidential information of the program is the value of the field secret in the class SimpleReflection and the attacker is able to observe standard output.

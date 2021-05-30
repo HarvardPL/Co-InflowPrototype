@@ -1,1 +1,0 @@
-In the program, a loop is executed and the local variables x and y are incremented (starting from zero) until the value of the local variable y reaches 10. In each iteration, the method print() is called and assigns the current value of x to the field low. When the value of y reaches five, x is set to the value of the field high.
