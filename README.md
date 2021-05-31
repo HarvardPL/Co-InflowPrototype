@@ -1,4 +1,4 @@
-## (Oakland 2021 Co-Inflow paper) Co-Inflow Prototype Java 8
+## (Oakland 2021 Co-Inflow paper) Co-Inflow Prototype (for Java 8)
 
 ### Paper
 
