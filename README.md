@@ -25,10 +25,10 @@ The implementation relies on source code rewriting. The source code analysis too
 
 #### Structure
 ```
-├── lbs.harvard.coinflow                     # User APIs, in particular, the _CoInflowUserAPI.java_ 
+├── lbs.harvard.coinflow                     # User APIs, in particular, the CoInflowUserAPI.java
 ├── lbs.harvard.coinflow.compiler            # Co-Inflow compiler implementation. 
                                                The compiler is implemented as a series of Spoon processors.
-                                               _CoInflowCompiler.java_ is the main file.
+                                               CoInflowCompiler.java is the main file.
 ├── lbs.harvard.coinflow.internal            # Co-Inflow runtime. IFCUtil.java is the main file. 
 ├── lbs.harvard.coinflow.lattice             # Lattice for Co-Inflow
 ├── lbs.harvard.coinflow.lattice.impl        # A graph implementation of the lattice
