@@ -16,8 +16,12 @@ import spoon.Launcher;
 import spoon.reflect.CtModel;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtVariableReference;
-import spoon.support.sniper.SniperJavaPrettyPrinter;
 
+/**
+ * Co-Inflow compiler is implemented as a series of spoon processors
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class CoInflowCompiler {
 
 	// counter for local variables created

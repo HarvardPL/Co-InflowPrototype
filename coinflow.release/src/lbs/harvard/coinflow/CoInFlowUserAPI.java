@@ -10,6 +10,11 @@ import lbs.harvard.coinflow.lattice.IFCLattice;
 import lbs.harvard.coinflow.lattice.principal.Principal;
 import lbs.harvard.coinflow.lattice.principal.PrincipalFactory;
 
+/**
+ * API for programmers to use in their source programs
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class CoInFlowUserAPI {
 	
 	/**

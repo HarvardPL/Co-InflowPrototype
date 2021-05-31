@@ -5,6 +5,11 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+/**
+ * Implementation for source and sink channels
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class CoInflowLibraryAnnotation {
 	
 	public static Map<String, List<Integer>> libraryEffectReadMap = new HashMap<>();

@@ -16,6 +16,11 @@ import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * 
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class AddFieldObjectLabelFieldProcessor extends AbstractProcessor<CtClass>{
 	
 	public static String obj_field_label = "obj_field_label";
