@@ -14,10 +14,10 @@ This repo includes the following
 The directory of this repo is the following: 
 ```
 .
-├── Co-Inflow.release       # original version of the IFSpec benchmark suite
-├── Co-Inflow.demo          # an example of using the Co-Inflow tool
+├── Co-Inflow.release       # Co-Inflow prototype release
+├── Co-Inflow.demo          # The example shown in the paper
 ├── IFSPEC                  # Core suite of IFSpec benchmark
-├── IFSpec_harness          # harness program for using Co-Inflow tool on the IFSpec benchmarks
+├── IFSpec_harness          # Harness program for using Co-Inflow tool on the IFSpec benchmarks
 
 ```
 
