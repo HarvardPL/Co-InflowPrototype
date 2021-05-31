@@ -7,6 +7,11 @@ import spoon.reflect.code.CtStatement;
 import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 
+/**
+ * Dealing with lambda: create a block for lambda expressions that do not have a bracket
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class LambdaBlockProcessor extends AbstractProcessor<CtLambda> {
 
 	@Override
@@ -16,7 +21,6 @@ public class LambdaBlockProcessor extends AbstractProcessor<CtLambda> {
 		if(lambda.getBody() == null) {
 			CtBlock block = coreFactory.createBlock();
 			if(lambda.getExpression() instanceof CtStatement) {
-				
 				block.addStatement((CtStatement)lambda.getExpression().clone() );
 				lambda.getExpression().delete();
 				lambda.setBody(block);

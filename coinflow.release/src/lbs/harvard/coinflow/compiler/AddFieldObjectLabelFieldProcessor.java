@@ -17,7 +17,8 @@ import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtTypeReference;
 
 /**
- * 
+ * This process adds two fields to every class definition it can rewrite: 
+ * (1) a field for the field label, and (2) a field for the object label
  * @author Jian Xiang (jxiang@seas.harvard.edu)
  *
  */

@@ -46,36 +46,16 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * add containers in various places: mainly (1) method calls (2) field access (3) array access
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ContainerProcessor extends AbstractProcessor{
 
 	
 	Set<CtStatement> topLevelStmt = new HashSet<>();
 	List<CtStatement> containerCode = null;
-	
-//	private CtStatement getTopLevelStmt(CtElement element){
-//		CtElement tmp = element; 
-//		if(tmp == null) {
-//			return null;
-//		}
-//		if( tmp instanceof CtClass || tmp instanceof CtInterface) {
-//			return null;
-//		}
-//		while(! ( tmp.getParent() != null && ((tmp.getParent() instanceof CtBlock)) 
-//				|| tmp.getParent() instanceof CtClass 
-//				|| tmp.getRoleInParent() == CtRole.STATEMENT)) {
-//			tmp = tmp.getParent();
-//			if(tmp == null) {
-//				return null;
-//			}
-//		}
-//		if(tmp instanceof CtField) {
-//			return null;
-//		}
-//		if(! (tmp instanceof CtStatement)) {
-//			return null;
-//		}
-//		return (CtStatement)tmp;
-//	}
 	
 	@Override
 	public void process(CtElement element) {

@@ -21,6 +21,11 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.reference.CtVariableReference;
 
+/**
+ * Rewrite all constructors to initialize field/object labels
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ConstructorObjFieldLabelsProcessor extends AbstractProcessor<CtExecutable> {
 
 	@Override
@@ -34,16 +39,10 @@ public class ConstructorObjFieldLabelsProcessor extends AbstractProcessor<CtExec
 				(element.getSimpleName().startsWith(ReorganizeInitilizationProcessor.method_prefix) 
 						&& !element.getReference().isStatic())) {
 
-			
-//		if(element.getReference().isConstructor()) {
-
 				CtInvocation ctInv = buildGetCurrentLevel(codeFactory, coreFactory);
-				
-				
 				CtAssignment<Object, Object> objLabelAssign = coreFactory.createAssignment();
 				CtFieldWrite lhs = coreFactory.createFieldWrite();
 				
-//				CtTypeReference t = element.getReference().getType();
 				CtTypeReference t = element.getReference().getDeclaringType();
 				
 				
@@ -65,8 +64,6 @@ public class ConstructorObjFieldLabelsProcessor extends AbstractProcessor<CtExec
 				fieldLabelAssign.setAssigned(lhs_field_label);
 				fieldLabelAssign.setAssignment(ctInv.clone());
 				
-			
-			
 //				CtStatement setObjectLabel = codeFactory.createCodeSnippetStatement("this."+ AddObjLabelFieldProcessor.obj_object_label + "= IFCUtil.getCurrentLabel()");
 //				CtStatement setFieldLabel = codeFactory.createCodeSnippetStatement("this."+ AddFieldLabelFieldProcessor.obj_field_label + "= IFCUtil.getCurrentLabel()");
 				

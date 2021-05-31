@@ -37,6 +37,12 @@ import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.reflect.code.CtStatementListImpl;
 
+/**
+ * The processor handles label stack for method calls. 
+ * It uses a stack of labels to pass the opaque labels from the caller to callee. The method signature won't require changes then. 
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ArgumentProcessor extends AbstractProcessor<CtInvocation> {
 
 	CodeFactory codeFactory = null;

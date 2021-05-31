@@ -89,6 +89,11 @@ import spoon.reflect.reference.CtWildcardReference;
 import spoon.reflect.visitor.CtVisitor;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/**
+ * Transform the local variables created by Co-Inflow by adding UnlabelOpaque()
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class LocalVariableProcessor extends AbstractProcessor {
 
 	public static Map<CtVariableReference, CtExpression> transformedLocalVarRef = new HashMap<>();

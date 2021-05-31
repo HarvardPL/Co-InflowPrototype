@@ -20,6 +20,11 @@ import spoon.reflect.reference.CtParameterReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/**
+ * Dealing with special structure: ForEach
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class CtForEachProcessor extends AbstractProcessor<CtForEach> {
 
 	

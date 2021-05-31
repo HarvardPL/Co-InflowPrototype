@@ -17,6 +17,11 @@ import spoon.reflect.code.CtVariableAccess;
 import spoon.reflect.code.CtVariableRead;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Check the specification of effect for library calls 
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class LibraryCallProcessor extends AbstractProcessor<CtAbstractInvocation>{
 
 	@Override

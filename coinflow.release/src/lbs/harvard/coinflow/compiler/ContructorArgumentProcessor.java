@@ -3,9 +3,6 @@ package lbs.harvard.coinflow.compiler;
 import java.util.ArrayList;
 import java.util.List;
 
-import lbs.harvard.coinflow.internal.IFCUtil;
-import lbs.harvard.coinflow.internal.OpaqueLabeled;
-import lbs.harvard.coinflow.lattice.IFCLabel;
 import lbs.harvard.coinflow.util.RewriteHelper;
 import spoon.processing.AbstractProcessor;
 import spoon.reflect.code.CtBlock;
@@ -13,16 +10,18 @@ import spoon.reflect.code.CtConstructorCall;
 import spoon.reflect.code.CtExpression;
 import spoon.reflect.code.CtInvocation;
 import spoon.reflect.code.CtStatement;
-import spoon.reflect.code.CtVariableRead;
 import spoon.reflect.declaration.CtElement;
-import spoon.reflect.declaration.CtType;
 import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * This class is not used currently. 
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ContructorArgumentProcessor extends AbstractProcessor<CtConstructorCall> {
-
 	CodeFactory codeFactory = null;
 	CoreFactory coreFactory  = null;
 	
@@ -40,7 +39,6 @@ public class ContructorArgumentProcessor extends AbstractProcessor<CtConstructor
 			}
 			
 			CtStatement stmt = (CtStatement) element;
-			
 			// for sanity check
 			setCalleeSigature(stmt, ctInvocation.getExecutable().getSignature());
 			

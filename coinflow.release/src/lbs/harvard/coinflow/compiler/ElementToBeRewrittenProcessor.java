@@ -35,6 +35,11 @@ import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Locate the elements that need to be renamed and opaque labeled 
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ElementToBeRewrittenProcessor extends AbstractProcessor{
 
 		@Override
@@ -121,17 +126,5 @@ public class ElementToBeRewrittenProcessor extends AbstractProcessor{
 					RewriteHelper.createNewLocalVarToBeRewritten(arrayRead, codeFactory);
 				}
 			}
-		}
-
-		/**
-		 * Get the statement that containers the argument ctelement
-		 * @param child
-		 * @return
-		 */
-		private static CtElement getStatementParent(CtElement child) {
-			while (child.getRoleInParent() != CtRole.STATEMENT || child.getRoleInParent() != CtRole.TYPE_MEMBER) {
-				child = child.getParent();
-			}
-			return child;
 		}
 }

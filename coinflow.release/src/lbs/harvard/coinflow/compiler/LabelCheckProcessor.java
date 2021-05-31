@@ -17,6 +17,11 @@ import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Add label flow checks at various places
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class LabelCheckProcessor extends AbstractProcessor<CtElement>{
 	
 	public static String bottomString = 
@@ -238,17 +243,4 @@ public class LabelCheckProcessor extends AbstractProcessor<CtElement>{
 		
 		RewriteHelper.insertStatements(stmt, setDefaultLabelsStmt, false);
 	}
-	
-//	public static CtExpression buildLatticeBottom(CoreFactory coreFactory, CodeFactory codeFactory) {
-//		CtFieldRead fr = coreFactory.createFieldRead();
-//		CtTypeReference latticeT = codeFactory.createCtTypeReference(lbs.harvard.coinflow.lattice.IFCLattice.class);
-//		fr.setTarget(codeFactory.createTypeAccessWithoutCloningReference(latticeT));
-//		CtFieldReference fref = coreFactory.createFieldReference();
-//		fref.setSimpleName("bot");
-//		fref.setType(codeFactory.createCtTypeReference(lbs.harvard.coinflow.lattice.IFCLabel.class));
-//		fref.setDeclaringType(latticeT);
-//		fr.setVariable(fref);
-//		return fr;
-//	}
-
 }

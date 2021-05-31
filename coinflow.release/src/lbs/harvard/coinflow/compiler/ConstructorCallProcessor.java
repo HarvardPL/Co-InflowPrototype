@@ -22,6 +22,11 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * The same as method calls; setup the label stack for constructor call
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
+ *
+ */
 public class ConstructorCallProcessor extends AbstractProcessor<CtConstructorCall>{
 
 		@Override
@@ -34,7 +39,6 @@ public class ConstructorCallProcessor extends AbstractProcessor<CtConstructorCal
 			if(element.getExecutable().getDeclaringType() != null && 
 					! element.getExecutable().getDeclaringType().getQualifiedName().startsWith("lbs.harvard.coinflow")) {
 				List paras = element.getExecutable().getParameters();
-				String classCalled = element.getExecutable().getDeclaringType().getQualifiedName();
 				ArgumentProcessor.processArgu(element.getExecutable(), element);
 				/**
 				if(MainProcessor.classesProcessed.contains(classCalled)) {

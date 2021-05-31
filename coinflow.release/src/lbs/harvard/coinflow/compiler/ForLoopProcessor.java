@@ -24,8 +24,8 @@ import spoon.reflect.visitor.filter.TypeFilter;
 
 
 /**
- * transfer for loop into a new shape: 
- * @author llama_jian
+ * Dealing with for loop: extracting initialization of the for loop
+ * @author Jian Xiang(jxiang@seas.harvard.edu)
  *
  */
 public class ForLoopProcessor extends AbstractProcessor<CtFor> {	
