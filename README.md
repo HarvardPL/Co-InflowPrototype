@@ -34,7 +34,7 @@ The implementation relies on source code rewriting. The source code analysis too
 ├── lbs.harvard.coinflow.lattice.impl        # A graph implementation of the lattice
 ├── lbs.harvard.coinflow.lattice.principal   # Principal used for lattice, mostly reserved for future use
 ├── lbs.harvard.coinflow.util                # Helper classes. _Rewriter.java_ is the main file. 
-├── lbs.harvard.coinflow.util.rifl           # _RIFLParser.java_ parses the rifl.xml files used in IFSPEC benchmarking
+├── lbs.harvard.coinflow.util.rifl           # _RIFLParser.java_ parses rifl.xml (for IFSPEC benchmarking)
 
 ```
  See the package _lbs.harvard.coinflow.compiler_ package
