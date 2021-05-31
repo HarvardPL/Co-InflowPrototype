@@ -39,5 +39,11 @@ This provides a program, IFSpecCompilation.java, that automatically compiles the
 #### Usage
 In the IFSpecCompilation program, specify the location of the IFSPEC folder, and the destination folder of the compiled Co-Inflow programs. Then run IFSpecCompilation to process the whole folder. 
 
-#### Processing
-The original benchmarks will be compiled into different packages named with the benchmark' names. So a new package will be produced for each benchmark suite. Originial benchmarks specify source and sink channels in their corresponding rifl.xml file. These   
+
+#### Compilation 
+The original benchmarks will be compiled into different packages named with the benchmark' names, i.e., a new package will be produced for each benchmark suite. Originial benchmarks specify source and sink channels in their corresponding rifl.xml files. The compilation process will read these files and insert label checks accordingly in the Co-Inflow versions.    
+
+#### Running the Co-Inflow version
+A RunSample.java file will be created in every package. Running this program will (a) create a lattice specifed by the rifl.xml file, and (2) run the Co-Inflow version with the lattice. 
+
+
