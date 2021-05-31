@@ -45,6 +45,13 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.reference.CtVariableReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/**
+ * Dealing with the label stack at the callee side: 
+ * (1) reading the label stack and 
+ * (2) creating new local variables (opaqueLabeled typed) for the parameters
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class ParameterRewritingProcessor extends AbstractProcessor<CtElement>{
 
 	

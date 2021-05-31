@@ -27,6 +27,11 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Restructure the initializations of fields: inserting blocks after these fields
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class ReorganizeInitilizationProcessor extends AbstractProcessor<CtField>{
 	
 	@Override

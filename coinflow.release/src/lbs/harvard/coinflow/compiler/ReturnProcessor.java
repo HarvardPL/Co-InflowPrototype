@@ -21,6 +21,13 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Check if return statement has unlabelOpaque(). 
+ * If yes, raise the context label before the return statement; 
+ * this would help label flow checks if the return statement is marked as sink	
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class ReturnProcessor extends AbstractProcessor<CtInvocation>{
 
 

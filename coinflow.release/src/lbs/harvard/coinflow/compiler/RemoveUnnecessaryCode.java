@@ -4,6 +4,12 @@ import lbs.harvard.coinflow.internal.IFCUtil;
 import spoon.processing.AbstractProcessor;
 import spoon.reflect.declaration.CtElement;
 
+/**
+ * A bit optimization that removes useless label joins; 
+ * (More optimization may be added later) 
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class RemoveUnnecessaryCode extends AbstractProcessor<CtElement>{
 
 	@Override

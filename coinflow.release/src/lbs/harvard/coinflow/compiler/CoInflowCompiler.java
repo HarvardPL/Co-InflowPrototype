@@ -155,7 +155,7 @@ public class CoInflowCompiler {
 		}
 		model.processWith(new LambdaBlockProcessor());
 		
-		// reorganize the initilizations of fields, by inserting blocks after these fields
+		// reorganize the initializations of fields, by inserting blocks after these fields
 		// TODO: change modifiers of final static fields into static fields
 		model.processWith(new ReorganizeInitilizationProcessor());
 		

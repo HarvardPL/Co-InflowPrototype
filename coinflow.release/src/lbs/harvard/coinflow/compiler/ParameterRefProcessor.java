@@ -22,6 +22,12 @@ import spoon.reflect.path.CtRole;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * link references of old parameters to newly created local variables. 
+ * These newly created local variables are opaqueLabeled typed
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class ParameterRefProcessor extends AbstractProcessor<CtElement>{
 
 

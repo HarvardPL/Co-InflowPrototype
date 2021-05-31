@@ -29,6 +29,11 @@ import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/**
+ * Adding label checks around sinks provided by rifl.xml files
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class OutputChannelProcessor extends AbstractProcessor<CtElement>{
 	@Override
 	public void process(CtElement ctElement) {
@@ -44,9 +49,6 @@ public class OutputChannelProcessor extends AbstractProcessor<CtElement>{
 				// check if parameters are sinks
 				for(int i = 1; i <= ctInv.getArguments().size(); i++) {
 					Port p = new Port(IFCPolicyInternal.parameter, className, methodSign, i);
-					if(p.toString().contains("print")) {
-						System.out.println();
-					}
 					if(RecordChannelProcessor.recordedSinks.contains(p.toString())) {
 						CtExpression sinkLabelExpr = createLabelExprFromPort(codeFactory, coreFactory, p, true);
 						createMethodParameterSinkCheck(codeFactory, coreFactory, ctInv, p, sinkLabelExpr);

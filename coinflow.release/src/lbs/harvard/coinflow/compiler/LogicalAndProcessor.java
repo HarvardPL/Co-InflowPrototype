@@ -13,6 +13,11 @@ import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.path.CtRole;
 
+/**
+ * Dealing with && and ||
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class LogicalAndProcessor extends AbstractProcessor<CtElement>{
 
 	boolean processedAndOp = false;

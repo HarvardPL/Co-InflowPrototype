@@ -26,10 +26,12 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.reference.CtVariableReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
+/**
+ * Dataflow analysis
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class StaticDataFlowAnalyzerProcessor extends AbstractProcessor<CtElement>{
-
-	
-	
 	Map<CtVariableReference, Set<CtVariableReference>> currentMethodFlows = new HashMap<>();
 	Map<CtExecutableReference, Map<CtVariableReference, Set<CtVariableReference>>> methodAffectingLinks 
 		= new HashMap<>();

@@ -10,6 +10,11 @@ import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Rewrite the calls to get field labels to field access of the objects
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class ObjectLabelProcessor extends AbstractProcessor<CtInvocation>{
 
 	@Override

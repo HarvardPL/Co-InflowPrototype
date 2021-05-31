@@ -18,6 +18,11 @@ import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Remove not used local variables
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class RemoveDeadLocalProcessor extends AbstractProcessor<CtElement>{
 
 	@Override

@@ -32,6 +32,11 @@ import spoon.reflect.reference.CtFieldReference;
 import spoon.reflect.reference.CtParameterReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Record all sinks and sources provided by user annotations
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class RecordChannelProcessor extends AbstractProcessor<CtElement>{
 	
 	public static Set<String> outputClasses = new HashSet<>();

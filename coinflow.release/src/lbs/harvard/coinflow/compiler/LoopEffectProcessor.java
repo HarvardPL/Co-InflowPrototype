@@ -92,7 +92,11 @@ import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.reference.CtVariableReference;
 
-
+/**
+ * Not sure why we have this file... (yet)
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class LoopEffectProcessor extends AbstractProcessor<CtElement>{
 
 	public static String loop_var_prefix = "$_loop_ifc_";

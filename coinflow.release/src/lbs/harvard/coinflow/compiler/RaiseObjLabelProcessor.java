@@ -15,6 +15,11 @@ import spoon.reflect.factory.CoreFactory;
 import spoon.reflect.reference.CtExecutableReference;
 import spoon.reflect.reference.CtTypeReference;
 
+/**
+ * Add flow checks before method calls of raiseObjLabel
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class RaiseObjLabelProcessor extends AbstractProcessor<CtInvocation> {
 
 	@Override
