@@ -15,7 +15,7 @@ The directory of this repo is the following:
 
 ```
 
-Except for the _IFSPEC_, the other three are implemented as Eclispe projects. Project _Co-Inflow.demo_ and _IFSpec_harness_ depend on the project _Co-Inflow.release_ to run. In the future, we may release other formats, e.g., jar and maven.  
+Except for the _IFSPEC_, the other three are implemented as Eclispe projects. Project _Co-Inflow.demo_ and _IFSpec_harness_ depend on the project _Co-Inflow.release_ to run. The projects can be exported to runnable jars. We may work on migrating the projects to maven later.   
 
 The current prototype doesn't focus on performance. It should have a great potential for improvement. 
 
