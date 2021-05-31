@@ -64,11 +64,11 @@ public class CoInflowCompiler {
 	public static String latticeFile = null;
 	
 	public static void main(String[] args) {
-		String outputFolder = "~/coinflow/output";
+		String outputFolder = "pathto/output/folder";
 		
 		Launcher launcher = new Launcher();
 		// path should be a folder
-		String inputFolder = "/Users/llama_jian/Documents/workspace/health_plus_case/src/";
+		String inputFolder = "pathto/source/folder";
 		
 		String channelsFile = null;
 		if(args.length < 2) {
