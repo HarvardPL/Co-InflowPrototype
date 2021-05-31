@@ -270,29 +270,6 @@ public class CoInflowCompiler {
 	}
 	
 	
-	/**
-	 * One possible way to build lattice is by implementing the interface of LatticeBuilder.
-	 * If a class implements this interface, we don't process it in rewrite. 
-	 * Note: This is not being used at the moment. Now, programmers are urged to build a lattice in their code and use it. 
-	 * @param allJavaFiles
-	 * @return
-	 */
-	public final static String findLatticeBuilderFile(List<String>  allJavaFiles) {
-		Launcher launcher = new Launcher();
-		for(String f : allJavaFiles) {
-			launcher.addInputResource(f);
-		}
-		launcher.buildModel();
-		CtModel model = launcher.getModel();
-		LatticeBuilderProcessor lbp = new LatticeBuilderProcessor();
-		model.processWith(lbp);
-		if(LatticeBuilderProcessor.latticeBuilderFile == null) {
-			System.err.println("Cannot find the class file that builds a lattice");
-		}
-		return LatticeBuilderProcessor.latticeBuilderFile;
-	}
-	
-	
 	public final static void copyLatticeBuilderFile(String latticeFile, String outputFolder) {
 		if(latticeFile!=null) {
 			Launcher launcher = new Launcher();
