@@ -13,7 +13,6 @@ public class LambdaExprProcessor extends AbstractProcessor<CtLambda>{
 		if(lambda.getParameters() != null && lambda.getParameters().size() > 0) {
 			CtParameter p = (CtParameter)(lambda.getParameters().get(0));
 			CtTypeReference pT = (CtTypeReference) p.getType();
-			// System.out.println(p.getType());
 			if(lambda.getExpression() != null) {
 				CtExpression expr = lambda.getExpression();
 				expr.setTypeCasts(null);
