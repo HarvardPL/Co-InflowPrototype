@@ -29,12 +29,12 @@ The implementation relies on source code rewriting. The source code analysis too
 ├── lbs.harvard.coinflow.compiler            # Co-Inflow compiler implementation. 
                                                The compiler is implemented as a series of Spoon processors.
                                                _CoInflowCompiler.java_ is the main file.
-├── lbs.harvard.coinflow.internal            # Co-Inflow runtime. _IFCUtil.java_ is the main file. 
+├── lbs.harvard.coinflow.internal            # Co-Inflow runtime. IFCUtil.java is the main file. 
 ├── lbs.harvard.coinflow.lattice             # Lattice for Co-Inflow
 ├── lbs.harvard.coinflow.lattice.impl        # A graph implementation of the lattice
 ├── lbs.harvard.coinflow.lattice.principal   # Principal used for lattice, mostly reserved for future use
 ├── lbs.harvard.coinflow.util                # Helper classes. _Rewriter.java_ is the main file. 
-├── lbs.harvard.coinflow.util.rifl           # _RIFLParser.java_ parses rifl.xml (for IFSPEC benchmarking)
+├── lbs.harvard.coinflow.util.rifl           # RIFLParser.java parses rifl.xml (for IFSPEC benchmarking)
 ```
 
 
