@@ -18,6 +18,14 @@ import lbs.harvard.coinflow.lattice.IFCLabelString;
 import lbs.harvard.coinflow.lattice.IFCLattice;
 import lbs.harvard.coinflow.lattice.principal.Principal;
 
+/**
+ * Graph implementation of IFCLattice. 
+ * Programmers should provide the flow relations (edges) of the lattice. 
+ * Then, it uses topological sorting to get an order of the flow relations and build a lattice. 
+ *  
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class IFCLatticeGraphImpl implements IFCLattice {
 
 	// The graph should be a lattice, but we don't check it at the current version
@@ -29,11 +37,9 @@ public class IFCLatticeGraphImpl implements IFCLattice {
 	    for example, if we have the following lattice, and alice actsfor {ab}
 	   	      ab
 	   	  a         b
-	   	     empty
-	   	     
-	   
+	   	      L
+
 	   	  then alice can access data owned by a and b
-	
     */ 
 	Map<IFCLabel, Set<IFCLabel>> flowsToMap = new HashMap<>();
 	MutableGraph<IFCLabel> graphWithActsfor = GraphBuilder.directed().build();

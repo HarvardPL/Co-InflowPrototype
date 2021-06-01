@@ -12,8 +12,12 @@ import lbs.harvard.coinflow.lattice.IFCLattice;
 import lbs.harvard.coinflow.lattice.impl.IFCLatticeGraphImpl;
 import lbs.harvard.coinflow.lattice.principal.Principal;
 import lbs.harvard.coinflow.lattice.principal.PrincipalFactory;
-import lbs.harvard.coinflow.util.IFCLabelMap;
 
+/**
+ * Co-Inflow runtime library. The main component is a stack of context labels. 
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class IFCUtil {
 	
 	// Programmers should setup their desired lattices; the default lattice is a lattice for confidentiality	

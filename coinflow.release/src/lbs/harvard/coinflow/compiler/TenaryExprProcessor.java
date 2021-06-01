@@ -21,6 +21,11 @@ import spoon.reflect.reference.CtLocalVariableReference;
 import spoon.reflect.reference.CtTypeReference;
 import spoon.support.reflect.declaration.CtInterfaceImpl;
 
+/**
+ * Preprocess tenary expressions
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class TenaryExprProcessor extends AbstractProcessor<CtConditional>{
 
 	@Override

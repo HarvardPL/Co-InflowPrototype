@@ -2,6 +2,11 @@ package lbs.harvard.coinflow.lattice;
 
 import java.util.concurrent.ConcurrentHashMap;
 
+/**
+ * Integer implementation for labels. It is simple and fast
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class IFCLabelInt implements IFCLabel<Integer> {
 
 	

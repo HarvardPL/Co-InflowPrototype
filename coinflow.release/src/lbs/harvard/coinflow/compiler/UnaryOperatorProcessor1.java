@@ -32,6 +32,11 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.reference.CtVariableReference;
 import spoon.support.reflect.code.CtStatementListImpl;
 
+/**
+ * preprocess unary expressions
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class UnaryOperatorProcessor1 extends AbstractProcessor<CtElement>{
 
 	@Override

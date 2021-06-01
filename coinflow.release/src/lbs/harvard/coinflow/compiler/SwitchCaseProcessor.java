@@ -14,6 +14,12 @@ import spoon.reflect.declaration.CtElement;
 import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 
+/**
+ * This processor transforms switch case structure into if else statement. 
+ * (There may be better ways to handle this structure. )
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class SwitchCaseProcessor extends AbstractProcessor<CtSwitch>{
 
 	public void process(CtSwitch ctSwitch) {

@@ -1,5 +1,11 @@
 package lbs.harvard.coinflow.lattice;
 
+/**
+ * Interface for labels
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ * @param <T>
+ */
 public interface IFCLabel<T> {
 	
 	public T getLabel();

@@ -7,14 +7,17 @@ import lbs.harvard.coinflow.internal.IFCPolicyInternal;
 import lbs.harvard.coinflow.lattice.IFCLabelString;
 import lbs.harvard.coinflow.lattice.IFCLattice;
 import lbs.harvard.coinflow.lattice.impl.IFCLatticeGraphImpl;
-import lbs.harvard.coinflow.lattice.principal.PrincipalFactory;
 
 import javax.xml.parsers.*;
 import java.io.*;
 import java.util.HashMap;
 import java.util.Map;
 
-
+/**
+ * RIFLParser processes the rifl.xml files used in IFSPEC benchmark suites
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class RIFLParser {
 	
 	public static void parsing(String pathToRIFLFile) {

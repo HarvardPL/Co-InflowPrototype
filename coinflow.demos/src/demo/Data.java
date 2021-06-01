@@ -28,6 +28,11 @@ public class Data {
 		imp.addFlowRelation(new IFCLabelString("L"), new IFCLabelString("bob"));
 		imp.addFlowRelation(new IFCLabelString("alice"), new IFCLabelString("H"));
 		imp.addFlowRelation(new IFCLabelString("bob"), new IFCLabelString("H"));
+		/**
+		 *            H
+		 *     alice     bob
+		 *            L   
+		 */
 		CoInFlowUserAPI.initilize(imp);		
 		return imp;
 	}

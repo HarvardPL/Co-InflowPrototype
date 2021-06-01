@@ -11,6 +11,11 @@ import spoon.reflect.code.UnaryOperatorKind;
 import spoon.reflect.factory.CodeFactory;
 import spoon.reflect.factory.CoreFactory;
 
+/**
+ * preprocess while loop structure
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class WhileLoopProcessor extends AbstractProcessor<CtWhile>{
 
 	@Override

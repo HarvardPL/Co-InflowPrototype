@@ -19,10 +19,10 @@ import lbs.harvard.coinflow.util.rifl.RIFLParser;
 public class IFSpecCompilation {		
 	
 	
-	// public static File originalFolder = new File("/Users/llama_jian/Develop/IFSPEC_Coinflow/");
-	// public static File generatedFolder = new File("/Users/llama_jian/Documents/workspace/IFSpecCoInflowGenerated/src/");
-	public static File originalFolder = new File("pathto/source/folder");
-	public static File generatedFolder = new File("pathto/output/folder");
+	 public static File originalFolder = new File("/Users/llama_jian/Develop/IFSPEC/");
+	 public static File generatedFolder = new File("/Users/llama_jian/Documents/workspace/IFSpecOriginalGenerated/src/");
+//	public static File originalFolder = new File("pathto/source/folder");
+//	public static File generatedFolder = new File("pathto/output/folder");
 	
 	public static void main(String[] args) {	
 		// transfer files from IFSPEC to this folder		

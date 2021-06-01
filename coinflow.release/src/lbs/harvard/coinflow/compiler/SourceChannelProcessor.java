@@ -28,7 +28,7 @@ import spoon.reflect.reference.CtTypeReference;
 import spoon.reflect.visitor.filter.TypeFilter;
 
 /**
- * This process join sources'labels if exist. This processor should be processed before label Check. 
+ * This processor joins sources'labels if exist. It should be processed before label Check. 
  * @author llama_jian
  *
  */

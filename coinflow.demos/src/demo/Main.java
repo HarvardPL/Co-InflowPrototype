@@ -1,5 +1,8 @@
 package demo;
 
+import lbs.harvard.coinflow.CoInFlowUserAPI;
+import lbs.harvard.coinflow.internal.Labeled;
+import lbs.harvard.coinflow.lattice.IFCLabelString;
 
 public class Main {
 
@@ -19,6 +22,8 @@ public class Main {
 		/** demonstrate information flow leak here; 
 		 uncomment the code, and do the compilation again */
 		// alice.setPhoneNum(b1);
+		Labeled<String> r = CoInFlowUserAPI.toLabeled(bob.getPhoneNum(), new IFCLabelString("bob"));
+		System.out.println(CoInFlowUserAPI.unlabel(r));
 	}
 	
 	static String formatNum(String num) {

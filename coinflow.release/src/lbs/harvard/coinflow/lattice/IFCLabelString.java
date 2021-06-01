@@ -1,5 +1,9 @@
 package lbs.harvard.coinflow.lattice;
-
+/**
+ * String implementation of labels. (very intuitive)
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class IFCLabelString implements IFCLabel<String>{
 
 	String l = "";

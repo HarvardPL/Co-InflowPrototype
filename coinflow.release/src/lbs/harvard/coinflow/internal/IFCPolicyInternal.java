@@ -5,6 +5,11 @@ import java.util.Map;
 
 import lbs.harvard.coinflow.lattice.IFCLabel;
 
+/**
+ * internal presentation of source and sink channels
+ * @author Jian Xiang (jxiang@seas.harvard.edu)
+ *
+ */
 public class IFCPolicyInternal{
 	
 	public static String parameter = "parameter";
