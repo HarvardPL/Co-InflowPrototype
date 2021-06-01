@@ -42,9 +42,9 @@ The implementation relies on source code rewriting. The source code analysis too
 The phone number example shown in the paper.
 
 #### Usage
-Run the CoInflowCompiler program with two arguments: (1) a source folder, and (2) a destination folder. For example, from the command line: 
-
-java CoInflowCompiler "pathto/coinflow.demos/src/" "pathto/output/folder"
+Run the CoInflowCompiler program with two arguments: (1) a source folder, and (2) a destination folder. For example, 
+from Eclipse, right click CoInflowCompiler.java -> "run as" -> "run configuration" -> "Argument" tab -> put source folder and output folder in the textbox
+from the command line: java CoInflowCompiler "pathto/coinflow.demos/src/" "pathto/output/folder" (after java compilation)
 
 ### IFSPEC
 The core suite of the IFSPEC benchmarks ([paper](https://pp.ipd.kit.edu/uploads/publikationen/ifspec18nordsec.pdf) and [download](www.spp-rs3.de/IFSpec)). It is a subset of the original benchmark suite: we delete the cases that Co-Inflow cannot correctly handle, e.g., reflections.   
