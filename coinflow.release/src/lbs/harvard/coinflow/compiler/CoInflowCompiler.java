@@ -252,9 +252,6 @@ public class CoInflowCompiler {
 		// Check flow requirements for field write; and raise context label for field reads
 		model.processWith(new LabelCheckProcessor());
 		
-		
-		
-		
 		// insert label controls for library calls
 		model.processWith(new LibraryCallProcessor());
 		

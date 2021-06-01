@@ -230,25 +230,31 @@ public class IFCLatticeGraphImpl implements IFCLattice {
 	
 	public static void main(String[] args) {
 		IFCLatticeGraphImpl imp = new IFCLatticeGraphImpl();
-		imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("b"));
-        imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("b"));
-        imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("c"));
-        imp.addFlowRelation(new IFCLabelString("b"), new IFCLabelString("ab"));
-        imp.addFlowRelation(new IFCLabelString("a"), new IFCLabelString("ab"));
-        imp.addFlowRelation(new IFCLabelString("c"), new IFCLabelString("d"));
-        imp.addFlowRelation(new IFCLabelString("ab"), new IFCLabelString("top"));
-        imp.addFlowRelation(new IFCLabelString("d"), new IFCLabelString("top"));
-        
-        imp.addActsforRelation(new IFCLabelString("alice"), new IFCLabelString("ab"));
-        
-        imp.setup();
-        System.out.println(imp.isLattice());
-        
-        System.out.println(imp.meet(new IFCLabelString("b"), new IFCLabelString("ab")));
-        System.out.println(imp.join(new IFCLabelString("b"), new IFCLabelString("ab")));
-        System.out.println(imp.bot());
-        System.out.println(imp.top());
-        
-        System.out.println(imp.flowsToWithActsfor(new IFCLabelString("b"), new IFCLabelString("alice")));
+		imp.addFlowRelation(new IFCLabelString("L"), new IFCLabelString("alice"));
+		imp.addFlowRelation(new IFCLabelString("L"), new IFCLabelString("bob"));
+		imp.addFlowRelation(new IFCLabelString("alice"), new IFCLabelString("H"));
+		imp.addFlowRelation(new IFCLabelString("bob"), new IFCLabelString("H"));
+		System.out.println(imp.bot());
+
+//		imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("b"));
+//        imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("b"));
+//        imp.addFlowRelation(new IFCLabelString("0"), new IFCLabelString("c"));
+//        imp.addFlowRelation(new IFCLabelString("b"), new IFCLabelString("ab"));
+//        imp.addFlowRelation(new IFCLabelString("a"), new IFCLabelString("ab"));
+//        imp.addFlowRelation(new IFCLabelString("c"), new IFCLabelString("d"));
+//        imp.addFlowRelation(new IFCLabelString("ab"), new IFCLabelString("top"));
+//        imp.addFlowRelation(new IFCLabelString("d"), new IFCLabelString("top"));
+//        
+//        imp.addActsforRelation(new IFCLabelString("alice"), new IFCLabelString("ab"));
+//        
+//        imp.setup();
+//        System.out.println(imp.isLattice());
+//        
+//        System.out.println(imp.meet(new IFCLabelString("b"), new IFCLabelString("ab")));
+//        System.out.println(imp.join(new IFCLabelString("b"), new IFCLabelString("ab")));
+//        System.out.println(imp.bot());
+//        System.out.println(imp.top());
+//        
+//        System.out.println(imp.flowsToWithActsfor(new IFCLabelString("b"), new IFCLabelString("alice")));
 	}
 }

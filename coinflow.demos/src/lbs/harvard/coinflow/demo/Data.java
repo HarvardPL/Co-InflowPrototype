@@ -3,6 +3,7 @@ package lbs.harvard.coinflow.demo;
 
 import lbs.harvard.coinflow.CoInFlowUserAPI;
 import lbs.harvard.coinflow.lattice.IFCLabel;
+import lbs.harvard.coinflow.lattice.IFCLabelString;
 import lbs.harvard.coinflow.lattice.IFCLattice;
 import lbs.harvard.coinflow.lattice.impl.IFCLatticeGraphImpl;
 import lbs.harvard.coinflow.lattice.principal.Principal;
@@ -18,18 +19,18 @@ public class Data {
 	 * User needs to provide code for constructing  
 	 */
 	static {
-		buildLattice();
-		IFCLattice l = CoInFlowUserAPI.getLattice();
+		IFCLattice l = buildLattice();
 		CoInFlowUserAPI.raiseObjLabel(Data.alice, l.lookup(aliceP));
 		CoInFlowUserAPI.raiseObjLabel(bob, l.lookup(bobP));
 	}
 	
 	public static IFCLattice buildLattice() {
-		Principal aliceP = PrincipalFactory.makePrincipal("alice");
-		Principal bobP = PrincipalFactory.makePrincipal("bob");
-		IFCLatticeGraphImpl impl = new IFCLatticeGraphImpl();
-		IFCLattice l = impl; 
-		CoInFlowUserAPI.initilize(l);		
-		return l;
+		IFCLatticeGraphImpl imp = new IFCLatticeGraphImpl();
+		imp.addFlowRelation(new IFCLabelString("L"), new IFCLabelString("alice"));
+		imp.addFlowRelation(new IFCLabelString("L"), new IFCLabelString("bob"));
+		imp.addFlowRelation(new IFCLabelString("alice"), new IFCLabelString("H"));
+		imp.addFlowRelation(new IFCLabelString("bob"), new IFCLabelString("H"));
+		CoInFlowUserAPI.initilize(imp);		
+		return imp;
 	}
 }
