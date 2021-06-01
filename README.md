@@ -44,7 +44,11 @@ The phone number example shown in the paper.
 #### Usage
 Run the CoInflowCompiler program with two arguments: (1) a source folder, and (2) a destination folder. \
 For example, from Eclipse, right click CoInflowCompiler.java -> "run as" -> "run configuration" -> "Argument" tab -> put source folder and output folder in the textbox; \
-or from the command line: java CoInflowCompiler "pathto/coinflow.demos/src/" "pathto/output/folder" (after java compilation)
+or from the command line: java CoInflowCompiler "../coinflow.demos/src/" "pathto/output/folder" (after java compilation)
+
+This example has three files. The code _alice.setPhoneNum(b1)_ in the file _Main.java_ contains an information leak (from bob to alice). After Co-Inflow compilation, run the Main.java file with Co-Inflow runtime will display an exception. 
+(It may be easy to create an Eclipse project for the output files produced by compilation, and add Co-Inflow project in its build path.)  
+
 
 ### IFSPEC
 The core suite of the IFSPEC benchmarks ([paper](https://pp.ipd.kit.edu/uploads/publikationen/ifspec18nordsec.pdf) and [download](www.spp-rs3.de/IFSpec)). It is a subset of the original benchmark suite: we delete the cases that Co-Inflow cannot correctly handle, e.g., reflections.   
