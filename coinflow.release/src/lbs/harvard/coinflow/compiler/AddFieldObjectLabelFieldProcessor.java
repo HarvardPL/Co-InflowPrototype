@@ -85,7 +85,7 @@ public class AddFieldObjectLabelFieldProcessor extends AbstractProcessor<CtClass
 		if(t.getSuperclass() == null) {
 			return false;
 		}
-		if(CoInflowCompiler.classesProcessed.contains(t.getSuperclass().getQualifiedName())){
+		if(CoInflowCompiler.classesToProcess.contains(t.getSuperclass().getQualifiedName())){
 			return true;
 		}
 		

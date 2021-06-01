@@ -1,4 +1,4 @@
-package lbs.harvard.coinflow.demo;
+package demo;
 
 
 public class Person {

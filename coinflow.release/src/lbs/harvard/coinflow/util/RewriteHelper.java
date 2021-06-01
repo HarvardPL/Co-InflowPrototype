@@ -62,7 +62,7 @@ public class RewriteHelper {
 	
 	public static void rewriteObjLabelOf(CtInvocation ctInv, CodeFactory codeFactory) {
 		CtExpression target = ctInv.getTarget();
-		if(CoInflowCompiler.classesProcessed.contains(target.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(target.getType().getQualifiedName())) {
 			CtExpression replacement = RewriteHelper.createFieldRead(target, AddFieldObjectLabelFieldProcessor.obj_object_label);
 			ctInv.replace(replacement);
 		}else {
@@ -78,7 +78,7 @@ public class RewriteHelper {
 			if(fw.getTarget() == null || fw.getTarget().getType() == null) {
 			}
 			
-			if(CoInflowCompiler.classesProcessed.contains(fw.getTarget().getType().getQualifiedName())) {
+			if(CoInflowCompiler.classesToProcess.contains(fw.getTarget().getType().getQualifiedName())) {
 				CtExpression fr = RewriteHelper.createFieldRead(fw.getTarget(), AddFieldObjectLabelFieldProcessor.obj_field_label);
 				return fr;
 			}else {
@@ -188,7 +188,7 @@ public class RewriteHelper {
 	 */
 	public static CtExpression createObjectLabelRead(CtInvocation ctInv, CodeFactory codeFactory) {
 		CtExpression target = (CtExpression)ctInv.getArguments().get(0);
-		if(CoInflowCompiler.classesProcessed.contains(target.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(target.getType().getQualifiedName())) {
 			CtExpression fr = RewriteHelper.createFieldRead(target, AddFieldObjectLabelFieldProcessor.obj_object_label);
 			return fr;
 		}else {
@@ -227,7 +227,7 @@ public class RewriteHelper {
 		if(target.getType().getQualifiedName().startsWith("lbs.harvard.coinflow")) {
 			return ConstructorObjFieldLabelsProcessor.buildGetCurrentLevel(codeFactory, ctInv.getFactory().Core());
 		}
-		if(CoInflowCompiler.classesProcessed.contains(target.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(target.getType().getQualifiedName())) {
 			CtExpression fr = RewriteHelper.createFieldRead(target, AddFieldObjectLabelFieldProcessor.obj_object_label);
 			return fr;
 		}else {
@@ -243,7 +243,7 @@ public class RewriteHelper {
 		if(target.getType().getQualifiedName().startsWith("lbs.harvard.coinflow")) {
 			return ConstructorObjFieldLabelsProcessor.buildGetCurrentLevel(codeFactory, target.getFactory().Core());
 		}
-		if(CoInflowCompiler.classesProcessed.contains(target.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(target.getType().getQualifiedName())) {
 			CtExpression fr = RewriteHelper.createFieldRead(target, AddFieldObjectLabelFieldProcessor.obj_object_label);
 			return fr;
 		}else {
@@ -309,7 +309,7 @@ public class RewriteHelper {
 		if(expr.getType().getQualifiedName().startsWith("lbs.harvard.coinflow")) {
 			return ConstructorObjFieldLabelsProcessor.buildGetCurrentLevel( expr.getFactory().Code(), expr.getFactory().Core());
 		}
-		if(CoInflowCompiler.classesProcessed.contains(expr.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(expr.getType().getQualifiedName())) {
 			CtExpression fr = RewriteHelper.createFieldRead(expr, AddFieldObjectLabelFieldProcessor.obj_field_label);
 			return fr;
 		}else {
@@ -333,7 +333,7 @@ public class RewriteHelper {
 	public static void rewriteToLabeled(CtInvocation ctInv, CodeFactory codeFactory) {
 		// if this target is one of the classes being processed
 		CtExpression target = ctInv.getTarget();
-		if(CoInflowCompiler.classesProcessed.contains(target.getType().getQualifiedName())) {
+		if(CoInflowCompiler.classesToProcess.contains(target.getType().getQualifiedName())) {
 			CtExpression fr = RewriteHelper.createFieldRead(target, AddFieldObjectLabelFieldProcessor.obj_field_label);
 			ctInv.replace(fr);
 		}else {
@@ -554,7 +554,7 @@ public class RewriteHelper {
 			return true;
 		}else if(expr instanceof CtFieldRead) {
 			CtFieldRead fr = (CtFieldRead)expr;
-			if(CoInflowCompiler.classesProcessed.contains((fr.getTarget().getType().getQualifiedName()))){
+			if(CoInflowCompiler.classesToProcess.contains((fr.getTarget().getType().getQualifiedName()))){
 				return true;
 			}
 		}else if(expr instanceof CtConstructorCall) {
@@ -563,7 +563,7 @@ public class RewriteHelper {
 				return false;
 			}
 			String clazz = ctInv.getType().getQualifiedName();
-			if(!CoInflowCompiler.classesProcessed.contains(ctInv.getExecutable().getDeclaringType().getQualifiedName())) {
+			if(!CoInflowCompiler.classesToProcess.contains(ctInv.getExecutable().getDeclaringType().getQualifiedName())) {
 				return false;
 			}
 			// every class needs to be rewritten, since they may be used to store information.
@@ -760,7 +760,7 @@ public class RewriteHelper {
 	
 	
 	public static boolean ifClassBeingRewritten(String classQName) {
-		return CoInflowCompiler.classesProcessed.contains(classQName);
+		return CoInflowCompiler.classesToProcess.contains(classQName);
 	}
 	
 	public static boolean isCoInFlowLibrary(CtTypeReference ctType) {

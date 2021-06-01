@@ -1,4 +1,4 @@
-package lbs.harvard.coinflow.demo;
+package demo;
 
 
 import lbs.harvard.coinflow.CoInFlowUserAPI;
@@ -12,16 +12,14 @@ import lbs.harvard.coinflow.lattice.principal.PrincipalFactory;
 public class Data {
 	static Person alice = new Person("123-456-7890", 1);
 	static Person bob = new Person("987-654-3210", 2);
-	static Principal aliceP = PrincipalFactory.makePrincipal("alice");
-	static Principal bobP = PrincipalFactory.makePrincipal("bob");
 	
 	/*
 	 * User needs to provide code for constructing  
 	 */
 	static {
 		IFCLattice l = buildLattice();
-		CoInFlowUserAPI.raiseObjLabel(Data.alice, l.lookup(aliceP));
-		CoInFlowUserAPI.raiseObjLabel(bob, l.lookup(bobP));
+		CoInFlowUserAPI.raiseObjLabel(alice, new IFCLabelString("alice"));
+		CoInFlowUserAPI.raiseObjLabel(bob, new IFCLabelString("bob"));
 	}
 	
 	public static IFCLattice buildLattice() {

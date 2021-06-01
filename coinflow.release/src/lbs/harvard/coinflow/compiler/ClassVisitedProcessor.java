@@ -13,20 +13,14 @@ import spoon.reflect.visitor.PrettyPrinter;
 
 public class ClassVisitedProcessor extends AbstractProcessor<CtElement>{
 
-	
-	
 	@Override
 	public void process(CtElement element) {
 		if(element instanceof CtClass) {
 			CtClass clazz = (CtClass)element;
-			CoInflowCompiler.classesProcessed.add(clazz.getQualifiedName());
+			CoInflowCompiler.classesToProcess.add(clazz.getQualifiedName());
 		}else if(element instanceof CtInterface) {
 			CtInterface itf = (CtInterface)element;
-			CoInflowCompiler.classesProcessed.add(itf.getQualifiedName());
+			CoInflowCompiler.classesToProcess.add(itf.getQualifiedName());
 		}
 	}
-	
-	
-	
-
 }

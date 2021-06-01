@@ -26,7 +26,7 @@ public class CoInflowCompiler {
 
 	// counter for local variables created
 	public static int counter = 0;
-	public static List<String> classesProcessed = new ArrayList<>();
+	public static List<String> classesToProcess = new ArrayList<>();
 	
 	// record all methods that have been rewritten
 	public static List<String> methodProcessed = new ArrayList<>();
@@ -101,7 +101,8 @@ public class CoInflowCompiler {
 		for(String f : allJavaFiles) {
 			launcher.addInputResource(f);
 		}
-		copyLatticeBuilderFile(latticeFile, outputFolder);
+		// copyLatticeBuilderFile(latticeFile, outputFolder);
+		
 		// if true, the pretty-printed code is readable without fully-qualified names
 		launcher.getEnvironment().setAutoImports(true); // optional
 		// set to false to get a clean file structures; copy resources may disrupt the file organization
@@ -113,15 +114,14 @@ public class CoInflowCompiler {
 		launcher.buildModel();
 		
 		CtModel model = launcher.getModel();
-		
+		// record all classes that will be processed
+		model.processWith(new ClassVisitedProcessor());
 		if(channelsFile != null) {
 			coInFlowProcessing(model, channelsFile);
 		}else {
 			coInFlowProcessing(model);
 		}
 		
-		// record all classes that will be processed
-		model.processWith(new ClassVisitedProcessor());
 		launcher.setSourceOutputDirectory(outputFolder);
 		launcher.prettyprint();
 		

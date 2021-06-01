@@ -33,7 +33,7 @@ public class RaiseObjLabelProcessor extends AbstractProcessor<CtInvocation> {
 			CtTypeReference target = codeFactory.createCtTypeReference(lbs.harvard.coinflow.internal.IFCUtil.class);
 			
 			try {
-				if(CoInflowCompiler.classesProcessed.contains(objTarget.getType().getQualifiedName())){
+				if(CoInflowCompiler.classesToProcess.contains(objTarget.getType().getQualifiedName())){
 					CtExpression fieldLabelExpr = (codeFactory.createCodeSnippetExpression(objTarget.toString() + "." + AddFieldObjectLabelFieldProcessor.obj_field_label));
 					CtExpression objLabelExpr = (codeFactory.createCodeSnippetExpression(objTarget.toString() + "." + AddFieldObjectLabelFieldProcessor.obj_object_label));
 					

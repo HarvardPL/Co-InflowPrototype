@@ -78,7 +78,7 @@ public class ArgumentProcessor extends AbstractProcessor<CtInvocation> {
 		CodeFactory codeFactory = methodCalled.getFactory().Code();
 		CoreFactory coreFactory = methodCalled.getFactory().Core();
 		if(methodCalled.isConstructor()) {
-			if(! CoInflowCompiler.classesProcessed.contains(methodCalled.getType().getQualifiedName())){
+			if(! CoInflowCompiler.classesToProcess.contains(methodCalled.getType().getQualifiedName())){
 				return;
 			}
 		}
@@ -202,7 +202,7 @@ public class ArgumentProcessor extends AbstractProcessor<CtInvocation> {
 	
 	public static void processArgu(CtExecutableReference methodCalled, CtExpression expr, CoreFactory coreFactory, CodeFactory codeFactory, CtTypeReference paraTypeRef) {
 		if(methodCalled.isConstructor()) {
-			if(! CoInflowCompiler.classesProcessed.contains(methodCalled.getType().getQualifiedName())){
+			if(! CoInflowCompiler.classesToProcess.contains(methodCalled.getType().getQualifiedName())){
 				return;
 			}
 		}
@@ -213,7 +213,7 @@ public class ArgumentProcessor extends AbstractProcessor<CtInvocation> {
 			CtMethod ctMethod = (CtMethod)methodCalled.getExecutableDeclaration();
 			for(Object topDef : ctMethod.getTopDefinitions()) {
 				CtMethod topDefMethod = (CtMethod)topDef;
-				if(!CoInflowCompiler.classesProcessed.contains(topDefMethod.getDeclaringType().getQualifiedName())) {
+				if(!CoInflowCompiler.classesToProcess.contains(topDefMethod.getDeclaringType().getQualifiedName())) {
 					return;
 					// if we cannot modify this class, we return early
 				}
