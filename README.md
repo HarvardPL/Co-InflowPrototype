@@ -9,7 +9,7 @@ The directory of this repo is the following:
 ```
 .
 ├── Co-Inflow.release       # Co-Inflow prototype release
-├── Co-Inflow.demo          # The example shown in the paper
+├── Co-Inflow.demo          # The example used in the paper
 ├── IFSPEC                  # Core suite of IFSpec benchmark
 ├── IFSpec_harness          # Harness program for using Co-Inflow tool on the IFSpec benchmarks
 
