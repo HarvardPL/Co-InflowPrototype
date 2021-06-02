@@ -21,9 +21,21 @@ public class Main {
 		
 		/** demonstrate information flow leak here; 
 		 uncomment the code, and do the compilation again */
-		// alice.setPhoneNum(b1);
-		Labeled<String> r = CoInFlowUserAPI.toLabeled(bob.getPhoneNum(), new IFCLabelString("bob"));
-		System.out.println(CoInFlowUserAPI.unlabel(r));
+		alice.setPhoneNum(b1);
+		
+		StringFunction exclaim = (s) -> s + "!";
+	    StringFunction ask = (s) -> s + "?";
+	    printFormatted("Hello", exclaim);
+	    printFormatted("Hello", ask);
+	}
+	
+	public static void printFormatted(String str, StringFunction format) {
+	    String result = format.run(str);
+	    System.out.println(result);
+	}
+	
+	interface StringFunction {
+		  String run(String str);
 	}
 	
 	static String formatNum(String num) {
